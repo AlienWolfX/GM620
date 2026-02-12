@@ -1,0 +1,2982 @@
+Boot NAND
+fC
+
+U-Boot 2013.04-svn7621 (Jun 26 2019 - 14:33:47)
+
+CPU  : ZX279128@A9,800MHZ
+Board: zxic zx279128evb
+DRAM:  512 MiB
+com1
+NAND:  boot mode: 1
+NAND_special nand special:0
+
+Manu ID: 0x98, Chip ID: 0xda (Toshiba NAND 256MiB 3,3V 8-bit)
+256 MiB
+<nand_read_skip_bad_,1308>!mtdpart=0x4,offset=0x580000,mtdpartoffset=0x4200000,mtdPartsize=0x600000,length=0xc
+[INFO] ZXIC_SOFT_VID:0
+product_vid = 0
+<zxic_gpio_init>(717):product_vid == 0 !!!!use default!!!
+vid=68-ZC-521
+<nand_read_skip_bad_,1308>!mtdpart=0x1,offset=0x0,mtdpartoffset=0x180000,mtdPartsize=0x80000,length=0x20000
+In:    serial
+Out:   serial
+Err:   serial
+clk_pll env is not setted, core clk won't change
+Net:   serdes init done
+addr 0x9400004c before value is fffe0000
+addr 0x9400004c after value is fffe01ff
+innerGeLedPolarSet 0
+innerGeLedPolarSet 0
+innerGeLedPolarSet 0
+innerGeLedPolarSet 0
+eth0
+
+Hit 1 to upgrade software version
+Hit any key to stop autoboot:  0
+do_mcupg function enter..
+Using eth0 device
+multi upgrade check timeout.
+Receive multicast packet failed (>.<)
+do_mcupg function enter..
+Using eth0 device
+multi upgrade check timeout.
+Receive multicast packet failed (>.<)
+do_mcupg function enter..
+Using eth0 device
+multi upgrade check timeout.
+Receive multicast packet failed (>.<)
+do_mcupg function enter..
+Using eth0 device
+multi upgrade check timeout.
+Receive multicast packet failed (>.<)
+do_mcupg function enter..
+Using eth0 device
+multi upgrade check timeout.
+Receive multicast packet failed (>.<)
+do_mcupg function enter..
+Using eth0 device
+multi upgrade check timeout.
+Receive multicast packet failed (>.<)
+do_mcupg function enter..
+Using eth0 device
+multi upgrade check timeout.
+Receive multicast packet failed (>.<)
+do_mcupg function enter..
+Using eth0 device
+multi upgrade check timeout.
+Receive multicast packet failed (>.<)
+do_mcupg function enter..
+Using eth0 device
+multi upgrade check timeout.
+Receive multicast packet failed (>.<)
+do_mcupg function enter..
+Using eth0 device
+multi upgrade check timeout.
+Receive multicast packet failed (>.<)
+do_mcupg function enter..
+Using eth0 device
+multi upgrade check timeout.
+Receive multicast packet failed (>.<)
+do_mcupg function enter..
+Using eth0 device
+multi upgrade check timeout.
+Receive multicast packet failed (>.<)
+do_mcupg function enter..
+Using eth0 device
+multi upgrade check timeout.
+Receive multicast packet failed (>.<)
+do_mcupg function enter..
+mac 3 phy status changed: 1000M full-duplex
+-----smac_init
+Using eth0 device
+multi upgrade check timeout.
+Receive multicast packet failed (>.<)
+do_mcupg function enter..
+Using eth0 device
+multi upgrade check timeout.
+Receive multicast packet failed (>.<)
+[DEBUG] setup_zxic_vid_param 95 ADDR:0x5effc000
+addr=200000
+addr=2200000
+select=0x0
+search=0x2
+<nand_read_skip_bad_,1308>!mtdpart=0x4,offset=0x0,mtdpartoffset=0x4200000,mtdPartsize=0x600000,length=0x1000
+BootImageNum=0x00000001,1
+select=0x1
+search=0x2
+search->result[select].entry=22001e0
+mtd_length=1602bb0
+<nand_read_skip_bad_,1308>!mtdpart=0x3,offset=0x0,mtdpartoffset=0x2200000,mtdPartsize=0x2000000,length=0x1602bb0
+<nand_read_skip_bad_,1308>!mtdpart=0x0,offset=0x0,mtdpartoffset=0x0,mtdPartsize=0x180000,length=0x80000
+lseek=0x52842000
+cmdline=U-Boot V1.0.00.521 20190626153911
+## Booting kernel from Legacy Image at 500001e0 ...
+   Image Name:   Linux Kernel Image
+   Image Type:   ARM Linux Kernel Image (uncompressed)
+   Data Size:    23079297 Bytes = 22 MiB
+   Load Address: 40008000
+   Entry Point:  40008000
+   Verifying Checksum ... OK
+   Loading Kernel Image ... OK
+OK
+----------------------
+|-->setup versioninfo tag...
+
+Starting kernel ...
+
+Uncompressing Linux... done, booting the kernel.
+Booting Linux on physical CPU 0x0
+Initializing cgroup subsys cpuset
+Initializing cgroup subsys cpu
+Initializing cgroup subsys cpuacct
+Linux version 4.1.25+ (root@PON) (gcc version 4.8.5 (Buildroot 2015.08.1-svn724) ) #10 SMP PREEMPT Wed Jun 26 15:38:39 CST 2019
+CPU: ARMv7 Processor [414fc091] revision 1 (ARMv7), cr=18c5387d
+CPU: PIPT / VIPT nonaliasing data cache, VIPT aliasing instruction cache
+Machine model: ZTE ZX279128
+in function:early_mem line: 766 zxic_mem_size = 0x20000000
+Memory policy: Data cache writealloc
+======= zx_map_io ============== zx_map_io acl,opc =======acl length 0x400000
+opc length 0x80000
+PERCPU: Embedded 11 pages/cpu @dd45f000 s15488 r8192 d21376 u45056
+Built 1 zonelists in Zone order, mobility grouping on.  Total pages: 129920
+Kernel command line: console=ttyAMA0,115200n8 rdinit=/sbin/init mem=512M; U-Boot V1.0.00.521 20190626153911 0x2200000 0x1 0x83 0x83
+PID hash table entries: 2048 (order: 1, 8192 bytes)
+Dentry cache hash table entries: 65536 (order: 6, 262144 bytes)
+Inode-cache hash table entries: 32768 (order: 5, 131072 bytes)
+Memory: 452760K/524288K available (5171K kernel code, 229K rwdata, 1744K rodata, 19080K init, 210K bss, 71528K reserved, 0K cma-reserved)
+Virtual kernel memory layout:
+    vector  : 0xffff0000 - 0xffff1000   (   4 kB)
+    fixmap  : 0xffc00000 - 0xfff00000   (3072 kB)
+    vmalloc : 0xe0800000 - 0xff000000   ( 488 MB)
+    lowmem  : 0xc0000000 - 0xe0000000   ( 512 MB)
+    modules : 0xbf000000 - 0xc0000000   (  16 MB)
+      .text : 0xc0008000 - 0xc06c90cc   (6917 kB)
+      .init : 0xc06ca000 - 0xc196c000   (19080 kB)
+      .data : 0xc196c000 - 0xc19a55e0   ( 230 kB)
+       .bss : 0xc19a55e0 - 0xc19d9e1c   ( 211 kB)
+SLUB: HWalign=32, Order=0-3, MinObjects=0, CPUs=2, Nodes=1
+Preemptible hierarchical RCU implementation.
+        Additional per-CPU info printed with stalls.
+NR_IRQS:16 nr_irqs:16 16
+L2C: platform modifies aux control register: 0x02050000 -> 0x32450000
+L2C: platform provided aux values permit register corruption.
+L2C: DT/platform modifies aux control register: 0x02050000 -> 0x02450000
+L2C-310 enabling early BRESP for Cortex-A9
+L2C-310 full line of zeros enabled for Cortex-A9
+L2C-310 dynamic clock gating enabled, standby mode enabled
+L2C-310 cache controller enabled, 16 ways, 512 kB
+L2C-310: CACHE_ID 0x410000c8, AUX_CTRL 0x46450001
+sched_clock: 64 bits at 400MHz, resolution 2ns, wraps every 4398046511103ns
+clocksource arm_global_timer: mask: 0xffffffffffffffff max_cycles: 0x5c4093a7d1, max_idle_ns: 440795210635 ns
+Calibrating delay loop... 1594.16 BogoMIPS (lpj=7970816)
+pid_max: default: 32768 minimum: 301
+Mount-cache hash table entries: 1024 (order: 0, 4096 bytes)
+Mountpoint-cache hash table entries: 1024 (order: 0, 4096 bytes)
+Initializing cgroup subsys blkio
+Initializing cgroup subsys memory
+Initializing cgroup subsys devices
+Initializing cgroup subsys freezer
+Initializing cgroup subsys net_cls
+Initializing cgroup subsys perf_event
+Initializing cgroup subsys net_prio
+CPU: Testing write buffer coherency: ok
+CPU0: thread -1, cpu 0, socket 0, mpidr 80000000
+Setting up static identity map for 0x40008220 - 0x40008254
+CPU1: thread -1, cpu 1, socket 0, mpidr 80000001
+Brought up 2 CPUs
+SMP: Total of 2 processors activated (3188.32 BogoMIPS).
+CPU: All CPU(s) started in SVC mode.
+devtmpfs: initialized
+clocksource jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 19112604462750000 ns
+pinctrl core: initialized pinctrl subsystem
+NET: Registered protocol family 16
+e8_arp_detect_init OK!
+DMA: preallocated 2048 KiB pool for atomic coherent allocations
+cpuidle: using governor ladder
+cpuidle: using governor menu
+[zx279128_init_machine] num_online_cpus:2 num_possible_cpus:2 num_present_cpus:2 num_active_cpus:2
+hw-breakpoint: found 5 (+1 reserved) breakpoint and 1 watchpoint registers.
+hw-breakpoint: maximum watchpoint size is 4 bytes.
+Serial: AMBA PL011 UART driver
+94405000.serial: ttyAMA0 at MMIO 0x94405000 (irq = 20, base_baud = 0) is a
+console [ttyAMA0] enabled
+Serial: AMBA PL011 UART add port0 success
+94406000.serial: ttyAMA1 at MMIO 0x94406000 (irq = 21, base_baud = 0) is a
+Serial: AMBA PL011 UART add port1 success
+[INFO]zxic_param_init
+[INFO] zxic_param_init zxic param addr:0xdeffc000
+0x00000000  5a 58 49 43 56 49 44 00  00 00 00 00 ff ff ff ff  ZXICVID.........
+0x00000010  ff ff ff ff ff ff ff ff  ff ff ff ff ff ff ff ff  ................
+0x00000020  ff ff ff ff ff ff ff ff  ff ff ff ff ff ff ff ff  ................
+0x00000030  ff ff ff ff ff ff ff ff  ff ff ff ff ff ff ff ff  ................
+0x00000040  ff ff ff ff ff ff ff ff  ff ff ff ff ff ff ff ff  ................
+0x00000050  ff ff ff ff ff ff ff ff  ff ff ff ff ff ff ff ff  ................
+0x00000060  ff ff ff ff ff ff ff ff  ff ff ff ff ff ff ff ff  ................
+0x00000070  ff ff ff ff ff ff ff ff  ff ff ff ff ff ff ff ff  ................
+0x00000080  ff ff ff ff ff ff ff ff  ff ff ff ff ff ff ff ff  ................
+0x00000090  ff ff ff ff ff ff ff ff  ff ff ff ff ff ff ff ff  ................
+0x000000a0  ff ff ff ff ff ff ff ff  ff ff ff ff ff ff ff ff  ................
+0x000000b0  ff ff ff ff ff ff ff ff  ff ff ff ff ff ff ff ff  ................
+0x000000c0  ff ff ff ff ff ff ff ff  ff ff ff ff ff ff ff ff  ................
+0x000000d0  ff ff ff ff ff ff ff ff  ff ff ff ff ff ff ff ff  ................
+0x000000e0  ff ff ff ff ff ff ff ff  ff ff ff ff ff ff ff ff  ................
+0x000000f0  ff ff ff ff ff ff ff ff  ff ff ff ff ff ff ff ff  ................
+
+[DEBUG]zxic_param_init zxic soft vid: 0
+[INFO] ZXIC_SOFT_VID:0
+product_vid = 0
+<zxic_gpio_init>(444):product_vid == 0 !!!!use default!!!
+vid=68-ZC-521
+vgaarb: loaded
+SCSI subsystem initialized
+usbcore: registered new interface driver usbfs
+usbcore: registered new interface driver hub
+usbcore: registered new device driver usb
+Switched to clocksource arm_global_timer
+NET: Registered protocol family 2
+TCP established hash table entries: 4096 (order: 2, 16384 bytes)
+TCP bind hash table entries: 4096 (order: 3, 32768 bytes)
+TCP: Hash tables configured (established 4096 bind 4096)
+UDP hash table entries: 256 (order: 1, 8192 bytes)
+UDP-Lite hash table entries: 256 (order: 1, 8192 bytes)
+NET: Registered protocol family 1
+synopsys pcie probe enter!!!!!!
+pcie0 irq is 34
+pcie1 irq is 35
+Add synopsys PCIe port 0
+SYNOPSYS pcie port0 memory addr(PA): 0x10000000
+SYNOPSYS pcie port0 system control addr(VA): 0xf0500000
+SYNOPSYS pcie port0 reg addr(VA): 0xe0a08000
+SYNOPSYS pcie port0 top crm addr(VA): 0xf0400000
+SYNOPSYS pcie port0 phy apb addr(VA): 0xe0a10000
+SYNOPSYS pcie port0 cfg  addr(VA): 0xe0a20000
+SYNOPSYS pcie port0 local irq num: 34
+SYNOPSYS pcie port0 mem_offset: 0x0
+Add synopsys PCIe port 1
+SYNOPSYS pcie port1 memory addr(PA): 0x20000000
+SYNOPSYS pcie port1 system control addr(VA): 0xf0500000
+SYNOPSYS pcie port1 reg addr(VA): 0xe0a18000
+SYNOPSYS pcie port1 top crm addr(VA): 0xf0400000
+SYNOPSYS pcie port1 phy apb addr(VA): 0xe0a38000
+SYNOPSYS pcie port1 cfg  addr(VA): 0xe0a40000
+SYNOPSYS pcie port1 local irq num: 35
+SYNOPSYS pcie port1 mem_offset: 0x0
+init synopsys pcie
+synopsys pcie driver preinit
+synopsys pcie  PreInit Controller 0
+synopsys pcie0 controller setting
+pinmux va base is 0xf0600000
+synopsys pcie0 controller waitting L0 state
+pcie0 link up,cnt 10!
+synopsys pcie port0 irqs setting
+pcie0 irq is 34
+synopsys pcie port0 windows map setting
+synopsys pcie controller0 enable
+synopsys pcie  PreInit Controller 1
+synopsys pcie1 controller setting
+pinmux va base is 0xf0600000
+synopsys pcie1 controller waitting L0 state
+pcie1 link up,cnt 10!
+synopsys pcie port1 irqs setting
+pcie1 irq is 35
+synopsys pcie port1 windows map setting
+synopsys pcie controller1 enable
+**********synopsys PCIe Setup*********
+synopsys pcie port0 controller root bus: 0
+**********synopsys PCI driver ScanBus************
+PCI host bridge to bus 0000:00
+pci_bus 0000:00: root bus resource [mem 0x10000000-0x17ffffff]
+pci_bus 0000:00: root bus resource [io  0x1000-0xffff]
+pci_bus 0000:00: No busn resource found for root bus, will use [bus 00-ff]
+PCI: bus0: Fast back to back transfers disabled
+**********synopsys PCIe Setup*********
+synopsys pcie port1 controller root bus: 1
+**********synopsys PCI driver ScanBus************
+PCI host bridge to bus 0000:01
+pci_bus 0000:01: root bus resource [mem 0x20000000-0x27ffffff]
+pci_bus 0000:01: root bus resource [io  0x10000-0x1ffff]
+pci_bus 0000:01: No busn resource found for root bus, will use [bus 01-ff]
+PCI: bus1: Fast back to back transfers disabled
+pci 0000:01:00.0: BAR 0: assigned [mem 0x20000000-0x200fffff 64bit]
+pci 0000:01:00.0: BAR 6: assigned [mem 0x20100000-0x2010ffff pref]
+pci 0000:00:00.0: BAR 0: assigned [mem 0x10000000-0x100fffff]
+tdm registered!
+zx_tdm2.0_probe!
+g_tdm_buf =e0a0d000,59acc000
+remap tdm reg 9a107000 to f0807000
+tdm irq=33
+reg 0xf080002c value is 0x17707
+tdm binding cpu1....
+pon init
+the pon mode is 8
+chip_ver: 6
+pon clk reset pin mux
+get pp irq succeed,g_pp_irq:25
+pp init
+netif_napi_add() called with weight 255 on device pon
+pp net init ok
+get sw irq succeed,g_sw_irq:26
+switch init
+idm_status_proc success!
+idm_desc_init e0a31000/5c450000
+idm net init ok
+get idm irq succeed,g_idm_irq:27
+futex hash table entries: 512 (order: 2, 16384 bytes)
+squashfs: version 4.0 (2009/01/31) Phillip Lougher
+ntfs: driver 2.1.32 [Flags: R/W].
+jffs2: version 2.2. (NAND) © 2001-2006 Red Hat, Inc.
+fuse init (API version 7.23)
+io scheduler noop registered (default)
+SCSI Media Changer driver v0.25
+denali_exist: MANUFACTURER_ID[0x98], DEVICE_ID[0xda]
+nand flash found
+ID of nandflash: 0x1590da98
+denali special 0
+find:TC58BVG1S3HTA00
+nand: device found, Manufacturer ID: 0x98, Chip ID: 0xda
+nand: Toshiba NAND 256MiB 3,3V 8-bit
+nand: 256 MiB, SLC, erase size: 128 KiB, page size: 2048, OOB size: 64
+8 bit device!
+Scanning device for bad blocks
+Bad eraseblock 1536 at 0x00000c000000
+Bad eraseblock 1537 at 0x00000c020000
+Creating 15 MTD partitions on "denali-nand":
+0x000000000000-0x000010000000 : "whole flash"
+0x000000000000-0x000000200000 : "u-boot"
+0x000004800000-0x000004c00000 : "parameter tags"
+0x000000200000-0x000002200000 : "kernel0"
+0x000005400000-0x000005800000 : "middleware"
+0x000004c00000-0x000005400000 : "usercfg"
+0x000002200000-0x000004200000 : "kernel1"
+0x000004200000-0x000004800000 : "others"
+0x000005800000-0x000005c00000 : "wlan"
+0x000005c00000-0x000005e00000 : "phoneapp"
+0x000006000000-0x000007e00000 : "osgi"
+0x000009c00000-0x00000ff60000 : "plugin_data"
+0x000007e00000-0x000009c00000 : "osgi1"
+0x000005e00000-0x000006000000 : "phoneapp1"
+0x00000ff60000-0x000010000000 : "GN25L95_datas"
+zte_spifc_reg:dcca0c40
+spifc->io_base :f0707000
+is_two_plane: 0
+spi nand not exist!
+ZX279121-spifc: probe of 94407000.spifc failed with error -1
+zx_spi_probe...master->bus_num:0
+SPI0 probed
+PPP generic driver version 2.4.2
+PPP MPPE Compression module registered
+NET: Registered protocol family 24
+dwc2 9000000.usb: 0 invalid for otg_cap parameter. Check HW configuration.
+dwc2 9000000.usb: 1024 invalid for host_nperio_tx_fifo_size. Check HW configuration.
+dwc2 9000000.usb: 1024 invalid for max_packet_count. Check HW configuration.
+dwc2 9000000.usb: DWC OTG Controller
+dwc2 9000000.usb: new USB bus registered, assigned bus number 1
+dwc2 9000000.usb: irq 36, io mem 0x00000000
+usb usb1: New USB device found, idVendor=1d6b, idProduct=0002
+usb usb1: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+usb usb1: Product: DWC OTG Controller
+usb usb1: Manufacturer: Linux 4.1.25+ dwc2_hsotg
+usb usb1: SerialNumber: 9000000.usb
+hub 1-0:1.0: USB hub found
+hub 1-0:1.0: 1 port detected
+xhci-hcd xhci-hcd.0.auto: xHCI Host Controller
+xhci-hcd xhci-hcd.0.auto: new USB bus registered, assigned bus number 2
+xhci-hcd xhci-hcd.0.auto: hcc params 0x0220f66c hci version 0x100 quirks 0x00010010
+xhci-hcd xhci-hcd.0.auto: irq 37, io mem 0x09100000
+usb usb2: New USB device found, idVendor=1d6b, idProduct=0002
+usb usb2: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+usb usb2: Product: xHCI Host Controller
+usb usb2: Manufacturer: Linux 4.1.25+ xhci-hcd
+usb usb2: SerialNumber: xhci-hcd.0.auto
+hub 2-0:1.0: USB hub found
+hub 2-0:1.0: 1 port detected
+xhci-hcd xhci-hcd.0.auto: xHCI Host Controller
+xhci-hcd xhci-hcd.0.auto: new USB bus registered, assigned bus number 3
+usb usb3: We don't know the algorithms for LPM for this host, disabling LPM.
+usb usb3: New USB device found, idVendor=1d6b, idProduct=0003
+usb usb3: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+usb usb3: Product: xHCI Host Controller
+usb usb3: Manufacturer: Linux 4.1.25+ xhci-hcd
+usb usb3: SerialNumber: xhci-hcd.0.auto
+hub 3-0:1.0: USB hub found
+hub 3-0:1.0: 1 port detected
+usbcore: registered new interface driver usb-storage
+usbcore: registered new interface driver usbserial
+usbcore: registered new interface driver usbserial_generic
+usbserial: USB Serial support registered for generic
+usbcore: registered new interface driver cp210x
+usbserial: USB Serial support registered for cp210x
+usbcore: registered new interface driver pl2303
+usbserial: USB Serial support registered for pl2303
+I2C probe start!I2C probe successed!
+<pdt_wdt_init>(565):creat proc files for watchdog!!!
+<pdt_wdt_init>(569):Starting Watchdog Timer...
+wdt debug: nr_cpu_ids= 2
+zxwdt: heartbeat 2 msec, clock 400000000
+Synopsys Designware Multimedia Card Interface Driver
+zx288080_sd 8980000.dwmmc0: IDMAC supports 32-bit address mode.
+zx288080_sd 8980000.dwmmc0: Using PIO mode.
+zx288080_sd 8980000.dwmmc0: Version ID is 210a
+zx288080_sd 8980000.dwmmc0: DW MMC controller at irq 19, 32 bit host data width, 32 deep fifo
+zx288080_sd 8980000.dwmmc0: No vmmc regulator found
+zx288080_sd 8980000.dwmmc0: No vqmmc regulator found
+zx288080_sd 8980000.dwmmc0: 1 slots initialized
+usbcore: registered new interface driver usbhid
+usbhid: USB HID core driver
+nf_conntrack version 0.5.0 (7074 buckets, 26000 max)
+zte--oss cpu usage module init
+11930:22:58 [Klogstdio][Info] [(869)LogStdioProcInit] LogStdioProcInit
+
+LogUdpWatchProcInit
+MAXNET DPI interface Loaded
+detail_process_init start
+ip_tables: (C) 2000-2006 Netfilter Core Team
+NET: Registered protocol family 10
+ip6_tables: (C) 2000-2006 Netfilter Core Team
+sit: IPv6 over IPv4 tunneling driver
+NET: Registered protocol family 17
+bridge: automatic filtering via arp/ip/ip6tables has been deprecated. Update your scripts to load br_netfilter if you need this.
+Bridge firewalling registered
+Ebtables v2.0 registered
+l2tp_core: L2TP core driver, V2.0
+l2tp_ppp: PPPoL2TP kernel driver, V2.0
+Registering SWP/SWPB emulation handler
+DevBw module init
+
+==========zxic_notifier_init success=================
+FLowRL module init
+Freeing unused kernel memory: 19080K (c06ca000 - c196c000)
+This architecture does not have kernel memory protection.
+mounting /dev/mtdblock2 to /tagparam, wait ...
+  Mounting ramdisk at /var and /usr/cpkTmp
+  mounting /dev/mtdblock4 middleware to /db_excp, wait ...
+  Mounting /dev/mtdblock5 to /userconfig
+  Mount ok!
+--------------- otarget is 1 ---------------
+************************** mout mtdblock12 *********************
+random: nonblocking pool is initialized
+<3000000008>11930:23:01 [Klogfile][Error] [(1201)CheckLogConfFile] CheckLogConfFile%CheckRestartCntConfFile
+
+jffs2: notice: (544) check_node_data: wrong data CRC in data node at 0x004e21b8: read 0xa8a154a5, calculated 0x62c712f9.
+--------------- ptarget is 1 ---------------
+************************** mout mtdblock13 *********************
+jffs2: Empty flash at 0x0003c4f4 ends at 0x0003c800
+  Mounting /dev/mtdblock14 to /GN25L95_datas
+  Mount ok!
+mounting /dev/mtdblock8 to /wlan, wait ...
+Configuring MAC interfaces
+ls: /etc/sysconfig/network-scripts/ifcfg-mii*: No such file or directory
+Bringing up interface lo
+[DEBUG]zxic_vid_init
+[gpio_module_init] gpio_elements:17 led_elements:10
+[INFO](null) init success.
+storage_wakeup_proc_create success!
+<verinfo_module_init>(1186)---->verinfo=U-Boot V1.0.00.521 20190626153911 0x2200000 0x1 0x83 0x83
+verinfo: U-Boot V1.0.00.521 20190626153911 0x2200000 0x1 0x83 0x83, u32CurrentSoftNumber: 1
+addr==2200000
+can't find /tagparam/aio_ver<verinfo_module_init>(1192)---->s8SoftVersion is V1.0.00.521
+!s8HardVersion is HV1.0.00.521
+!s32Description is ZXJL GPON-ONU UNI V1.0.00.521
+s8VendorInfo is ZXJL
+flag is 0
+<verinfo_module_init>(1194)----><verinfo_module_init>(1196)---->bsp_i2c_GN25L95_mcu_eeprom_mode_select read table 2 192-register success.
+bob table 2 192-register to judge GN25L95 select mcu(0x*0) or eeprom(0x*1) mode ! count=0,judge_reg=0x2.
+bsp_GN25L95_probe count=0,r_data=0x00.
+GN25L95 found.
+bspdriver select GN25L95 mode is MCU.
+=== verify slic info ===
+try mode: 1
+slic_mode_pinmux_init pinmux_set mod:1 old:0x02affeba new:0x0007f036
+reg 0xf080002c value is 0x17707
+found a port:0 cs:1 ch:0
+Siliconlab chip id error! 0x0
+rcn:0x0 pcn:0x0
+can't found id.
+cann't Find a port:1
+cann't Find a port:2
+cann't Find a port:3
+try mode: 2
+slic_mode_pinmux_init pinmux_set mod:2 old:0x02affeba new:0x02affeba
+reg 0xf0800030 value is 0x11b
+found a port:0 cs:1 ch:0
+Siliconlab chip Si3218x found! id:0xaa
+cann't Find a port:1
+cann't Find a port:2
+cann't Find a port:3
+qupengchao : pon0 create success
+register fpga driver success, major=222
+= TM Module SYS FS Init ended successfully =
+tm_initModule begin...
+[tm_initial]g_pon_mode is 0x8.
+tm_pp_initial start
+[TM][ppglb_set_acl_base]input: base=0x5da20000
+ upa_set_rr_mask_cfg input: upa_rr_mask = 0x2ab
+ api lock init!!
+tm_pp_initial--------finish
+tm_switch_initial----start
+tm_switch_initial----finish
+tm_initial successed !!!
+enter tm_sdk_init
+exit tm_db_init
+modify acl hash when set extern acl hash
+tm_initModule end...
+iprt_data_init success!
+ethdriver_init....
+g_mii_dev_name[0]  sw
+g_mii_dev_name[1]  pon
+zteGpmac_initModule begin...
+=== GponMac Supported MaxTcont: 16 MaxPLI: 800B ===
+##huoqf zteGponAsicStarttimeChkResultInit write cfg=10
+##huoqf zteGponAsicStarttimeChkResultInit read cfg=10
+= PON Module Operate ended successfully =
+DEbug: GPON PIN_MUX_REG3:(0x6ddeffb)
+state o1 =>o2
+state o2 =>o1
+create zteGpon_rei_task ok!
+= GMAC Module SYS FS Init ended successfully =
+zteGpmac_initModule end...
+zx279100_gpon_Init ok
+Init switch module
+zy switch detected boardtype:192
+zy uni num:4
+switch config 9127/9128 GPON  mode!
+[zte_sw_api.c] tm_add_acl_flow_rule FAIL!
+sw_set_default_ipv4_mulrule failed!
+[zte_sw_api.c] tm_add_acl_flow_rule FAIL!
+sw_set_default_protocol_rule failed!
+[SW][sw_init_switch] reg hff
+[yqs]set cpu queue rate limit to 4000pps
+[SW][sw_init_switch] reg get statistics
+Init switch module Success
+bsp_i2c_GN25L95_mcu_eeprom_mode_select read table 2 192-register success.
+bob table 2 192-register to judge GN25L95 select mcu(0x*0) or eeprom(0x*1) mode ! count=0,judge_reg=0x2.
+bsp_GN25L95_probe count=0,r_data=0x00.
+GN25L95 found.
+bsp_GN25L95_probe 0x51 success!
+Optical select GN25L95 mode is MCU.
+vendor name = ZTE_B+_G
+ optical PN(0x60) =
+ optical PN(0x28) = GN25L95
+udpwatchd inited!
+kudp  inited!
+Init codec_ec5 v1.9(2016-12-17)!
+----VoIPCodecInit ch0
+----VoIPCodecInit ch1
+P_2833: Setup 0
+DSP device setup OK!
+------------[ cut here ]------------
+WARNING: CPU: 1 PID: 658 at kernel/softirq.c:150 __local_bh_enable_ip+0xb0/0xdc()
+Modules linked in: dsp_dev(O) voip_codec(O) kudp(O) optical(O) switch(O) multicast(O) gpondrv(O) zte_gpon(O) netdriver(O) ffe(O) iprt(O) tm(O) zx_ponreg(O) wan_bridge(O) qos_mod(O) bspdriver(O)
+CPU: 1 PID: 658 Comm: S99modules Tainted: G           O    4.1.25+ #10
+Hardware name: ZTE ZX279128 (Device Tree)
+[<c001052c>] (unwind_backtrace) from [<c000d22c>] (show_stack+0x10/0x14)
+[<c000d22c>] (show_stack) from [<c04e66c4>] (dump_stack+0x84/0x98)
+[<c04e66c4>] (dump_stack) from [<c0030f44>] (warn_slowpath_common+0x80/0xb0)
+[<c0030f44>] (warn_slowpath_common) from [<c0031010>] (warn_slowpath_null+0x1c/0x24)
+[<c0031010>] (warn_slowpath_null) from [<c0033ea4>] (__local_bh_enable_ip+0xb0/0xdc)
+[<c0033ea4>] (__local_bh_enable_ip) from [<c00206d0>] (pp_bmu_alloc_bp+0x8c/0xec)
+[<c00206d0>] (pp_bmu_alloc_bp) from [<c0021b00>] (lower_alloc_skb_bp+0x14/0x54)
+[<c0021b00>] (lower_alloc_skb_bp) from [<c037782c>] (__alloc_skb+0x78/0x1e4)
+[<c037782c>] (__alloc_skb) from [<c03cdba8>] (MontorSendMsgInner+0xb0/0x21c)
+[<c03cdba8>] (MontorSendMsgInner) from [<c03cdd78>] (monitor_timer_handler+0x64/0x104)
+[<c03cdd78>] (monitor_timer_handler) from [<c0074314>] (call_timer_fn+0x24/0x98)
+[<c0074314>] (call_timer_fn) from [<c007478c>] (run_timer_softirq+0x1e0/0x25c)
+[<c007478c>] (run_timer_softirq) from [<c0033c00>] (__do_softirq+0x108/0x25c)
+[<c0033c00>] (__do_softirq) from [<c0033fb0>] (irq_exit+0x80/0xb4)
+[<c0033fb0>] (irq_exit) from [<c006738c>] (__handle_domain_irq+0x80/0xe8)
+[<c006738c>] (__handle_domain_irq) from [<c0009420>] (gic_handle_irq+0x24/0x5c)
+[<c0009420>] (gic_handle_irq) from [<c000dd40>] (__irq_svc+0x40/0x74)
+Exception stack(0xc1439da0 to 0xc1439de8)
+9da0: c19691f0 c18d5200 00000037 00325253 49500000 c19ba848 dd4b62c4 c18d5000
+9dc0: dd4b4df4 000c3000 000418d5 000000c3 00004550 c1439de8 524c4100 c0200678
+9de0: 20000113 ffffffff
+[<c000dd40>] (__irq_svc) from [<c0200678>] (copy_page+0x38/0x60)
+---[ end trace f5541b9cf0627f20 ]---
+pdt_ethdrv_recv meet error pdev==NULL || pdev->reg_state== 0,skb->pdt_info.port=15.
+pdt_ethdrv_recv meet error pdev==NULL || pdev->reg_state== 0,skb->pdt_info.port=23.
+bsp_bob_GN25L95_mcu_eeprom_mode_select read table 2 192-register success.
+bob table 2 192-register to judge GN25L95 select mcu(0x*0) or eeprom(0x*1) mode ! count=0,judge_reg=0x2.
+bsp_bob_GN25L95_probe count=0,r_data=0x00.
+GN25L95 found.
+bob select GN25L95 mode is MCU.
+pdt_ethdrv_recv meet error pdev==NULL || pdev->reg_state== 0,skb->pdt_info.port=15.
+Kmodule GN25L95.ko insmod successfully !
+GPON MCU MODE
+bobtest write_all_datas_to_GN25L95
+filename=/userconfig/GN25L95_datas_backup/A2_Lower.txt
+g_data_count=123
+bobtest write_data_to_GN25L95 162 0 123
+pdt_ethdrv_recv meet error pdev==NULL || pdev->reg_state== 0,skb->pdt_info.port=23.
+filename=/userconfig/GN25L95_datas_backup/Modualtion_LUT.txt
+g_data_count=128
+bobtest table_select_GN25L95 4 OK
+bobtest write_data_to_GN25L95 162 128 128
+pdt_ethdrv_recv meet error pdev==NULL || pdev->reg_state== 0,skb->pdt_info.port=23.
+filename=/userconfig/GN25L95_datas_backup/Bias_LUT.txt
+g_data_count=128
+bobtest table_select_GN25L95 5 OK
+bobtest write_data_to_GN25L95 162 128 128
+pdt_ethdrv_recv meet error pdev==NULL || pdev->reg_state== 0,skb->pdt_info.port=15.
+filename=/userconfig/GN25L95_datas_backup/APD_LUT.txt
+g_data_count=64
+bobtest table_select_GN25L95 6 OK
+bobtest write_data_to_GN25L95 162 192 64
+read_bob_data_from_file_a2_table2 filename=/userconfig/GN25L95_datas_backup/A2_Table_2.txt
+g_data_count=128
+bobtest table_select_GN25L95 2 OK
+bobtest write_data_to_GN25L95 162 128 128
+bobtest write_data_to_GN25L95 NG,addr=41(0xA9),data=68(0x44)
+bobtest write_data_to_GN25L95 NG,addr=42(0xAA),data=128(0x80)
+bobtest write_data_to_GN25L95 NG,addr=43(0xAB),data=85(0x55)
+bobtest write_data_to_GN25L95 NG,addr=44(0xAC),data=64(0x40)
+bobtest write_data_to_GN25L95 NG,addr=55(0xB7),data=224(0xE0)
+bobtest table_select_GN25L95 2 OK
+bobtest write_all_datas_to_GN25L95 duration: 0.745496
+write_all_datas_to_GN25L95 finish!!!
+Flash VID get : 0
+TAG VID get : 0
+ success : download_init 968
+[kernel upload]:upload init enter
+[kernel upload]:upload init sucess
+[kernel upload]:upload init enter
+[kernel upload]:upload init sucess
+region code:0
+region name:
+USER_CFG is same as ETC_CFG, donot need copy
+  Database default setting is [current : 0]
+*****************pc start********************
+*****************echo 5000 > /proc/sys/vm/min_free_kbytes********************
+/etc/init.d/rcS: line 303: can't create /proc/sys/kernel/jembench: nonexistent directory
+/etc/init.d/rcS: line 315: can't create /proc/sys/kernel/jvm_osgi: nonexistent directory
+
+11930:23:07 [DB][Warn] [dbc_mgr_file_xm(2688)zxicDbTblXMLFil] zxicDbTblXMLFileChkLoad entry eOpType=1
+g_wifi_type=1
+11930:23:07 [osgi_proxy][Warn] [osgi_proxy_mgr.(337)OsgiProxyMain] OSGI_PROXY_PID tUsbDevInfoListShmid shmget init ok!
+11930:23:07 [DB][Warn] [dbc_mgr_file_xm(3107)zxicDbXMLDmDefL] zxicDbXMLDmDefLoad  tblname(AutoIpEnable) bDmMacroOn is false.
+11930:23:07 [DB][Warn] [dbc_mgr_file_xm(3107)zxicDbXMLDmDefL] zxicDbXMLDmDefLoad  tblname(allowedMACAddresses) bDmMacroOn is false.
+11930:23:07 [DB][Warn] [dbc_mgr_file_xm(2967)zxicDbXMLCreate] zxicDbXMLCreateTblLoad tblname(WDInfo) bTblMacroOn is false.
+11930:23:07 [DB][Warn] [dbc_mgr_file_xm(2967)zxicDbXMLCreate] zxicDbXMLCreateTblLoad tblname(TUNNEL64CFG) bTblMacroOn is false.
+11930:23:07 [DB][Warn] [dbc_mgr_file_xm(2967)zxicDbXMLCreate] zxicDbXMLCreateTblLoad tblname(PPPJumboCfg) bTblMacroOn is false.
+11930:23:07 [DB][Warn] [dbc_mgr_file_xm(2967)zxicDbXMLCreate] zxicDbXMLCreateTblLoad tblname(McTunnel46) bTblMacroOn is false.
+11930:23:07 [DB][Warn] [dbc_mgr_file_xm(3107)zxicDbXMLDmDefL] zxicDbXMLDmDefLoad  tblname(ChgPwd) bDmMacroOn is false.
+11930:23:07 [DB][Warn] [dbc_mgr_file_xm(3107)zxicDbXMLDmDefL] zxicDbXMLDmDefLoad  tblname(IsAutoShowWizard) bDmMacroOn is false.
+11930:23:07 [DB][Warn] [dbc_mgr_file_xm(2967)zxicDbXMLCreate] zxicDbXMLCreateTblLoad tblname(EthAcl) bTblMacroOn is false.
+11930:23:07 [DB][Warn] [dbc_mgr_file_xm(2967)zxicDbXMLCreate] zxicDbXMLCreateTblLoad tblname(MultiCastGlobalConf) bTblMacroOn is false.
+11930:23:07 [DB][Warn] [dbc_mgr_file_xm(2967)zxicDbXMLCreate] zxicDbXMLCreateTblLoad tblname(MultiCastPortConf) bTblMacroOn is false.
+11930:23:07 [DB][Warn] [dbc_mgr_file_xm(2967)zxicDbXMLCreate] zxicDbXMLCreateTblLoad tblname(MultiCastSpecialGroup) bTblMacroOn is false.
+11930:23:07 [DB][Warn] [dbc_mgr_file_xm(2967)zxicDbXMLCreate] zxicDbXMLCreateTblLoad tblname(MultiCastMvlanConf) bTblMacroOn is false.
+11930:23:07 [DB][Warn] [dbc_mgr_file_xm(2967)zxicDbXMLCreate] zxicDbXMLCreateTblLoad tblname(MultiCastAbility) bTblMacroOn is false.
+11930:23:07 [DB][Warn] [dbc_mgr_file_xm(2967)zxicDbXMLCreate] zxicDbXMLCreateTblLoad tblname(MultiCastCustomConf) bTblMacroOn is false.
+11930:23:07 [DB][Warn] [dbc_mgr_file_xm(3107)zxicDbXMLDmDefL] zxicDbXMLDmDefLoad  tblname(tManageableDevNumOfEntries) bDmMacroOn is false.
+11930:23:07 [DB][Warn] [dbc_mgr_file_xm(3107)zxicDbXMLDmDefL] zxicDbXMLDmDefLoad  tblname(tManageableDevNotifyLimit) bDmMacroOn is false.
+11930:23:07 [DB][Warn] [dbc_mgr_file_xm(3107)zxicDbXMLDmDefL] zxicDbXMLDmDefLoad  tblname(ACSType) bDmMacroOn is false.
+11930:23:07 [DB][Warn] [dbc_mgr_file_xm(3107)zxicDbXMLDmDefL] zxicDbXMLDmDefLoad  tblname(ACSURLRetry) bDmMacroOn is false.
+11930:23:07 [DB][Warn] [dbc_mgr_file_xm(3107)zxicDbXMLDmDefL] zxicDbXMLDmDefLoad  tblname(RemoteUpgradeCertAuth) bDmMacroOn is false.
+11930:23:07 [DB][Warn] [dbc_mgr_file_xm(2967)zxicDbXMLCreate] zxicDbXMLCreateTblLoad tblname(HostNameList) bTblMacroOn is false.
+11930:23:07 [DB][Warn] [dbc_mgr_file_xm(3107)zxicDbXMLDmDefL] zxicDbXMLDmDefLoad  tblname(MediaWanConn) bDmMacroOn is false.
+11930:23:07 [DB][Warn] [dbc_mgr_file_xm(3107)zxicDbXMLDmDefL] zxicDbXMLDmDefLoad  tblname(MediaIPMode) bDmMacroOn is false.
+11930:23:07 [DB][Warn] [dbc_mgr_file_xm(3107)zxicDbXMLDmDefL] zxicDbXMLDmDefLoad  tblname(MediaIpAddr) bDmMacroOn is false.
+11930:23:07 [DB][Warn] [dbc_mgr_file_xm(3107)zxicDbXMLDmDefL] zxicDbXMLDmDefLoad  tblname(MediaIpv6Addr) bDmMacroOn is false.
+11930:23:08 [DB][Warn] [dbc_mgr_file_xm(2967)zxicDbXMLCreate] zxicDbXMLCreateTblLoad tblname(VOIPCSHSDPA) bTblMacroOn is false.
+11930:23:08 [DB][Warn] [dbc_mgr_file_xm(2967)zxicDbXMLCreate] zxicDbXMLCreateTblLoad tblname(VOIPCSHSDPASERVICEKEY) bTblMacroOn is false.
+11930:23:08 [DB][Warn] [dbc_mgr_file_xm(3107)zxicDbXMLDmDefL] zxicDbXMLDmDefLoad  tblname(Model) bDmMacroOn is false.
+11930:23:08 [DB][Warn] [dbc_mgr_file_xm(3107)zxicDbXMLDmDefL] zxicDbXMLDmDefLoad  tblname(DevNotification) bDmMacroOn is false.
+11930:23:08 [DB][Warn] [dbc_mgr_file_xm(2967)zxicDbXMLCreate] zxicDbXMLCreateTblLoad tblname(FWPT) bTblMacroOn is false.
+11930:23:08 [DB][Warn] [dbc_mgr_file_xm(2967)zxicDbXMLCreate] zxicDbXMLCreateTblLoad tblname(PdtLDAR) bTblMacroOn is false.
+11930:23:08 [DB][Warn] [dbc_mgr_file_xm(3107)zxicDbXMLDmDefL] zxicDbXMLDmDefLoad  tblname(NasID) bDmMacroOn is false.
+11930:23:08 [DB][Warn] [dbc_mgr_file_xm(3107)zxicDbXMLDmDefL] zxicDbXMLDmDefLoad  tblname(MasterAuthServerIP) bDmMacroOn is false.
+11930:23:08 [DB][Warn] [dbc_mgr_file_xm(3107)zxicDbXMLDmDefL] zxicDbXMLDmDefLoad  tblname(MasterAuthServerPort) bDmMacroOn is false.
+11930:23:08 [DB][Warn] [dbc_mgr_file_xm(3107)zxicDbXMLDmDefL] zxicDbXMLDmDefLoad  tblname(MasterAuthServerSecret) bDmMacroOn is false.
+11930:23:08 [DB][Warn] [dbc_mgr_file_xm(3107)zxicDbXMLDmDefL] zxicDbXMLDmDefLoad  tblname(MasterAcctServerIP) bDmMacroOn is false.
+11930:23:08 [DB][Warn] [dbc_mgr_file_xm(3107)zxicDbXMLDmDefL] zxicDbXMLDmDefLoad  tblname(MasterAcctServerPort) bDmMacroOn is false.
+11930:23:08 [DB][Warn] [dbc_mgr_file_xm(3107)zxicDbXMLDmDefL] zxicDbXMLDmDefLoad  tblname(MasterAcctServerSecret) bDmMacroOn is false.
+11930:23:08 [DB][Warn] [dbc_mgr_file_xm(3107)zxicDbXMLDmDefL] zxicDbXMLDmDefLoad  tblname(BackupAuthServerIP) bDmMacroOn is false.
+11930:23:08 [DB][Warn] [dbc_mgr_file_xm(3107)zxicDbXMLDmDefL] zxicDbXMLDmDefLoad  tblname(BackupAuthServerPort) bDmMacroOn is false.
+11930:23:08 [DB][Warn] [dbc_mgr_file_xm(3107)zxicDbXMLDmDefL] zxicDbXMLDmDefLoad  tblname(BackupAuthServerSecret) bDmMacroOn is false.
+11930:23:08 [DB][Warn] [dbc_mgr_file_xm(3107)zxicDbXMLDmDefL] zxicDbXMLDmDefLoad  tblname(BackupAcctServerIP) bDmMacroOn is false.
+11930:23:08 [DB][Warn] [dbc_mgr_file_xm(3107)zxicDbXMLDmDefL] zxicDbXMLDmDefLoad  tblname(BackupAcctServerPort) bDmMacroOn is false.
+11930:23:08 [DB][Warn] [dbc_mgr_file_xm(3107)zxicDbXMLDmDefL] zxicDbXMLDmDefLoad  tblname(BackupAcctServerSecret) bDmMacroOn is false.
+11930:23:08 [DB][Warn] [dbc_mgr_file_xm(3107)zxicDbXMLDmDefL] zxicDbXMLDmDefLoad  tblname(ReauthPeriod) bDmMacroOn is false.
+11930:23:08 [DB][Warn] [dbc_mgr_file_xm(3107)zxicDbXMLDmDefL] zxicDbXMLDmDefLoad  tblname(PreAuth) bDmMacroOn is false.
+11930:23:08 [DB][Warn] [dbc_mgr_file_xm(3107)zxicDbXMLDmDefL] zxicDbXMLDmDefLoad  tblname(MasterAuthServerIP) bDmMacroOn is false.
+11930:23:08 [DB][Warn] [dbc_mgr_file_xm(3107)zxicDbXMLDmDefL] zxicDbXMLDmDefLoad  tblname(MasterAuthServerPort) bDmMacroOn is false.
+11930:23:08 [DB][Warn] [dbc_mgr_file_xm(3107)zxicDbXMLDmDefL] zxicDbXMLDmDefLoad  tblname(MasterAuthServerSecret) bDmMacroOn is false.
+11930:23:08 [DB][Warn] [dbc_mgr_file_xm(3107)zxicDbXMLDmDefL] zxicDbXMLDmDefLoad  tblname(MasterAcctServerIP) bDmMacroOn is false.
+11930:23:08 [DB][Warn] [dbc_mgr_file_xm(3107)zxicDbXMLDmDefL] zxicDbXMLDmDefLoad  tblname(MasterAcctServerPort) bDmMacroOn is false.
+11930:23:08 [DB][Warn] [dbc_mgr_file_xm(3107)zxicDbXMLDmDefL] zxicDbXMLDmDefLoad  tblname(MasterAcctServerSecret) bDmMacroOn is false.
+11930:23:08 [DB][Warn] [dbc_mgr_file_xm(3107)zxicDbXMLDmDefL] zxicDbXMLDmDefLoad  tblname(BackupAuthServerIP) bDmMacroOn is false.
+11930:23:08 [DB][Warn] [dbc_mgr_file_xm(3107)zxicDbXMLDmDefL] zxicDbXMLDmDefLoad  tblname(BackupAuthServerPort) bDmMacroOn is false.
+11930:23:08 [DB][Warn] [dbc_mgr_file_xm(3107)zxicDbXMLDmDefL] zxicDbXMLDmDefLoad  tblname(BackupAuthServerSecret) bDmMacroOn is false.
+11930:23:08 [DB][Warn] [dbc_mgr_file_xm(3107)zxicDbXMLDmDefL] zxicDbXMLDmDefLoad  tblname(BackupAcctServerIP) bDmMacroOn is false.
+11930:23:08 [DB][Warn] [dbc_mgr_file_xm(3107)zxicDbXMLDmDefL] zxicDbXMLDmDefLoad  tblname(BackupAcctServerPort) bDmMacroOn is false.
+11930:23:08 [DB][Warn] [dbc_mgr_file_xm(3107)zxicDbXMLDmDefL] zxicDbXMLDmDefLoad  tblname(BackupAcctServerSecret) bDmMacroOn is false.
+11930:23:08 [DB][Warn] [dbc_mgr_file_xm(3107)zxicDbXMLDmDefL] zxicDbXMLDmDefLoad  tblname(ReauthPeriod) bDmMacroOn is false.
+11930:23:08 [DB][Warn] [dbc_mgr_file_xm(3107)zxicDbXMLDmDefL] zxicDbXMLDmDefLoad  tblname(PreAuth) bDmMacroOn is false.
+11930:23:08 [DB][Warn] [dbc_mgr_file_xm(2967)zxicDbXMLCreate] zxicDbXMLCreateTblLoad tblname(WLANWAPI) bTblMacroOn is false.
+11930:23:08 [DB][Warn] [dbc_mgr_file_xm(2967)zxicDbXMLCreate] zxicDbXMLCreateTblLoad tblname(PerformUpLoad) bTblMacroOn is false.
+11930:23:08 [DB][Warn] [dbc_mgr_file_xm(2967)zxicDbXMLCreate] zxicDbXMLCreateTblLoad tblname(EthAlarm) bTblMacroOn is false.
+11930:23:08 [DB][Warn] [dbc_mgr_file_xm(2967)zxicDbXMLCreate] zxicDbXMLCreateTblLoad tblname(WANDCfg) bTblMacroOn is false.
+11930:23:08 [DB][Warn] [dbc_mgr_file_xm(2967)zxicDbXMLCreate] zxicDbXMLCreateTblLoad tblname(E8OPT17S) bTblMacroOn is false.
+11930:23:08 [DB][Warn] [dbc_mgr_file_xm(2967)zxicDbXMLCreate] zxicDbXMLCreateTblLoad tblname(FWPMAPP) bTblMacroOn is false.
+11930:23:08 [DB][Warn] [dbc_mgr_file_xm(2967)zxicDbXMLCreate] zxicDbXMLCreateTblLoad tblname(SELFBIND) bTblMacroOn is false.
+11930:23:08 [DB][Warn] [dbc_mgr_file_xm(2967)zxicDbXMLCreate] zxicDbXMLCreateTblLoad tblname(TR064Cfg) bTblMacroOn is false.
+11930:23:08 [DB][Warn] [dbc_mgr_file_xm(2967)zxicDbXMLCreate] zxicDbXMLCreateTblLoad tblname(Tr069InformParaExtend) bTblMacroOn is false.
+11930:23:08 [DB][Warn] [dbc_mgr_file_xm(2967)zxicDbXMLCreate] zxicDbXMLCreateTblLoad tblname(USBPrinterParList) bTblMacroOn is false.
+11930:23:08 [DB][Warn] [dbc_mgr_file_xm(2967)zxicDbXMLCreate] zxicDbXMLCreateTblLoad tblname(USBPrinterButton) bTblMacroOn is false.
+11930:23:08 [DB][Warn] [dbc_mgr_file_xm(3107)zxicDbXMLDmDefL] zxicDbXMLDmDefLoad  tblname(ExcessBurstSize) bDmMacroOn is false.
+11930:23:08 [DB][Warn] [dbc_mgr_file_xm(3107)zxicDbXMLDmDefL] zxicDbXMLDmDefLoad  tblname(PeakRate) bDmMacroOn is false.
+11930:23:08 [DB][Warn] [dbc_mgr_file_xm(3107)zxicDbXMLDmDefL] zxicDbXMLDmDefLoad  tblname(PeakBurstSize) bDmMacroOn is false.
+11930:23:08 [DB][Warn] [dbc_mgr_file_xm(3107)zxicDbXMLDmDefL] zxicDbXMLDmDefLoad  tblname(ParConformAction) bDmMacroOn is false.
+11930:23:08 [DB][Warn] [dbc_mgr_file_xm(3107)zxicDbXMLDmDefL] zxicDbXMLDmDefLoad  tblname(ParConformDSCP) bDmMacroOn is false.
+11930:23:08 [DB][Warn] [dbc_mgr_file_xm(3107)zxicDbXMLDmDefL] zxicDbXMLDmDefLoad  tblname(ParConformVlanPrio) bDmMacroOn is false.
+11930:23:08 [DB][Warn] [dbc_mgr_file_xm(3107)zxicDbXMLDmDefL] zxicDbXMLDmDefLoad  tblname(LogShowLevel) bDmMacroOn is false.
+11930:23:08 [DB][Warn] [dbc_mgr_file_xm(2967)zxicDbXMLCreate] zxicDbXMLCreateTblLoad tblname(ZBEndPoint) bTblMacroOn is false.
+11930:23:08 [DB][Warn] [dbc_mgr_file_xm(2967)zxicDbXMLCreate] zxicDbXMLCreateTblLoad tblname(EndPointLight) bTblMacroOn is false.
+11930:23:08 [DB][Warn] [dbc_mgr_file_xm(2967)zxicDbXMLCreate] zxicDbXMLCreateTblLoad tblname(EndPointSecurity) bTblMacroOn is false.
+11930:23:08 [DB][Warn] [dbc_mgr_file_xm(2967)zxicDbXMLCreate] zxicDbXMLCreateTblLoad tblname(EndPointSocket) bTblMacroOn is false.
+11930:23:08 [DB][Warn] [dbc_mgr_file_xm(2967)zxicDbXMLCreate] zxicDbXMLCreateTblLoad tblname(EndPointTemperHumi) bTblMacroOn is false.
+11930:23:08 [DB][Warn] [dbc_mgr_file_xm(2967)zxicDbXMLCreate] zxicDbXMLCreateTblLoad tblname(ZBGateWay) bTblMacroOn is false.
+11930:23:08 [DB][Warn] [dbc_mgr_file_xm(2967)zxicDbXMLCreate] zxicDbXMLCreateTblLoad tblname(BucpeInfo) bTblMacroOn is false.
+11930:23:08 [DB][Warn] [dbc_mgr_file_xm(2967)zxicDbXMLCreate] zxicDbXMLCreateTblLoad tblname(BucpeCounter) bTblMacroOn is false.
+11930:23:08 [DB][Warn] [dbc_mgr_file_xm(2688)zxicDbTblXMLFil] zxicDbTblXMLFileChkLoad entry eOpType=2
+11930:23:08 [DB][Warn] [dbc_mgr_tag_par(673)zxic_db_init_ta] BoardType  not set!
+11930:23:08 [DB][Warn] [dbc_mgr_tag_par(713)zxic_db_init_ta] loid  not set!
+11930:23:08 [DB][Warn] [dbc_mgr_tag_par(723)zxic_db_init_ta] loid password  not set !
+11930:23:08 [DB][Warn] [dbc_mgr_tag_par(333)zxic_db_init_ta] RegisterID not set!
+11930:23:08 [DB][Warn] [dbc_mgr_tag_par(345)zxic_db_init_ta] Password not set!
+11930:23:08 [DB][Warn] [dbc_mgr_tag_par(357)zxic_db_init_ta] Loid not set!
+11930:23:08 [DB][Warn] [dbc_mgr_tag_par(369)zxic_db_init_ta] LoidPwd not set!
+11930:23:08 [DB][Warn] [dbc_mgr_tag_par(410)zxic_db_init_ta] loid not set!
+11930:23:08 [DB][Warn] [dbc_mgr_tag_par(421)zxic_db_init_ta] loid password not set!
+11930:23:08 [DB][Warn] [dbc_mgr_tag_par(442)zxic_db_init_ta] ponmac not set!
+11930:23:08 [DB][Warn] [dbc_mgr_tag_par(111)zxic_db_init_ta] wlan4:user_key1:2tTmV2C6,len:8 from flash
+net_ratelimit: 26 callbacks suppressed
+11930:23:10 [OSS_cspd][Warn] [oss_sche.c(849)RunProcess] RunProcess process[firewall] Event[0x1100] dwUsedTicks[292]
+11930:23:10 [bandInfo_mgr][Warn] [e8_bandInfo_mgr(819)bandinfo_mgr_in] BandInfo_main SET_TIMER
+11930:23:10 [dss_mgr][Warn] [dss_lla.c(946)si_dss_lla_main] The Dss' lpMsg is null.
+[si_lan_eth_filter_init 71] start.
+g_wifi_type=1
+11930:23:10 [cfgchk][Warn] [cfgchk_mgr.c(1718)getwanstatus] tWANDType=65536
+11930:23:10 [cfgchk][Warn] [cfgchk_mgr.c(1724)getwanstatus] tWancList.tGeneralPara.dwCount=1
+11930:23:10 [cfgchk][Error] [cfgchk_mgr.c(417)CfgChk_Init] [CfgChk_Init] failed, no AVAILABLE wan!
+11930:23:10 [ct_userinfo_mgr][Warn] [e8_ctuserinfo_m(2933)si_get_province] now in func si_get_province_map
+11930:23:10 [ct_userinfo_mgr][Error] [e8_ctuserinfo_m(2959)si_get_province] si_get_province_map failed,retcode is -1
+11930:23:10 [ct_userinfo_mgr][Warn] [e8_ctuserinfo_m(2962)si_get_provinceIPv6: ADDRCONF(NETDEV_UP): br0: link is not ready
+] Province:CHQ
+11930:23:10 [dhcp6s][Warn] [dhcp6s_main.c(1580)getHwMacByIfNam]
+11930:23:10 [dhcp6s][Error] [dhcp6s_main.c(1772)startDhcp6sInst] invalid interface
+======ftp conv=======Init
+brctl: SIOCDEVPRIVATE: Numerical result out of range
+VendorId=38c,Chiethdrv_dev_ioctl  ,brdev_set.port_id 0 ,brdev_set.name eth0 ,brdev_set.flag 0
+pModel=9128,Revision = 28,IcVersion = f0624,ChipMode = 0
+iptables: Bad rule (does a matching rule exist in that chain?).
+iptables: Bad rule (does a matching rule exist in that chain?).
+ethdrv_dev_ioctl  ,brdev_set.port_id 1 ,brdev_set.name eth1 ,brdev_set.flag 0
+iptables: Bad rule (does a matching rule exist in that chain?).
+ethdrv_dev_ioctl  ,brdev_set.port_id 2 ,brdev_set.name eth2 ,brdev_set.flag 0
+ethdrv_dev_ioctl  ,brdev_set.port_id 3 ,brdev_set.name eth3 ,brdev_set.flag 0
+11930:23:11 [U_busybox][Warn] [ifconfig.c(989)ifconfig] SIOCGIFFLAGS
+[ADAPTER]set sn:CIOT11a113f8, pwd:
+gpondrvCfgXGRegInfoAdapter not support now!
+o7_flag = 0,arg_o7_Flag->ctl=0
+11930:23:11 [gpo[zte_api_sw_lan_up_pon_set]lan_up is 0.lan_up_port is 4.
+n_mgr][Error] [pThe mode is pon up
+on_gpon_adapte(1zte_api_sw_lan_up_pon_set done
+83)si_gpon_comm_st] before si_gpon_lanup_set_db  lan_up_mode=0x0 lan_up_port=4
+lan_up_mode:0,lan_up_port:4
+Close switch success!
+[ADAPTER]set gpon up!!!
+[ADAPTER]ERR: pwd is NULL!
+[Zx9110GponStart]sn :CIOT11a113f8, pwd :123456
+====EVENT_O7_STATE_SAVE OFF====
+sh: /etc/spare_description.sh: not found
+====================gpon_omci start======================
+insmod: can't read '/kmodule/usbcore.ko': No such file or directory
+insmod: can't read '/kmodule/ehci-hcd.ko': No such file or directory
+insmod: can't read '/kmodule/uhci-hcd.ko': No such file or directory
+insmod: can't read '/kmodule/ohci-hcd': No such file or directory
+registering usb led module!
+mount: mounting none on /proc/bus/usb failed: No such file or directory
+11930:23:12 [sd_mgr][Error] [sd_mgr_product_(175)CspSdMgrProduct] do not have sd port
+11930:23:12 [route_mgr][Error] [route_mgr.c(2223)si_db_init_defg] si_db_qry_default_rt: no default RT
+11930:23:12 [route_mgr][Warn] [route6_mgr.c(228)si_db_v6_init_d] si_db_qry_default_rt6: no default RT
+Process_Perf's Event(4352) is not support !!
+Omci get Byte Order is Little-Endian
+g_bByteSort(0)
+OA_Sysdrv_GetTcontBufferSize: value(0) is out of range, use def value:256
+Call pm_wlan_list_config error, ret = -4
+[zxic_omci_mngregister mt_drv
+_event_callback]init the wifi hardware forward handler(to idm0)
+Call pFucMngExecinit the wifi hardware forward handler(to idm1)
+ ucRet=1
+ g_Memt_drv 0000:00:00.0: enabling device (0140 -> 0142)
+Ctr_Configure=0x00000000
+
+=== pAd = e9101000, size = 1128368 ===
+
+,g_MeCtr_CreateM<-- RTMPAllocTxRxRingMemory, Status=0, ErrorValue=0x
+ark1=0x00000000,<-- RTMPAllocAdapterBlock, Status=0
+g_MeCtr_CreateMapAd->CSRBaseAddress =0xe9000000, csr_addr=0xe9000000!
+rk2=0x00000000
+device_id =0x7603
+[OA_Chip_Get_ChRtmpChipOpsHook(507): Not support for HIF_MT yet!
+ip_Info] get chimt7603_init()-->
+pinstance for (4mt_bcn_buf_init(224): Not support for HIF_MT yet!
+) failed!!!
+<z<--mt7603_init()
+xic_omci_mng_event_callback>pChipIns==ZXIC_OMCI_NULL or pChipIns->pFuncMng==ZXIC_OMCI_NULL
+[zxic_omci_mng_event_config] Event (0x0500000c) no found!
+[zxic_omci_mng_event_config] Event (0x0500000c) no found!
+[zxic_omci_mng_event_callback]Call pFucMngExec ucRet=2
+g_uAvailableVoipCfgMethods_sem init success
+OA_Pondrv_GetTcontMax result:0 tcontmax:15
+OA_Pondrv_GetTcontQueueMax result:0 tcontqueuemax:8
+[GoldenSea]TcontID[1], policy:0, pqinfo:0
+[GoldenSea]TcontID[2], policy:0, pqinfo:0
+[GoldenSea]TcontID[3], policy:0, pqinfo:0
+[GoldenSea]TcontID[4], policy:0, pqinfo:0
+[GoldenSea]TcontID[5], policy:0, pqinfo:0
+[GoldenSea]TcontID[6], policy:0, pqinfo:0
+[GoldenSea]TcontID[7], policy:0, pqinfo:0
+[GoldenSea]TcontID[8], policy:0, pqinfo:0
+11930:23:12 [omci][Error] [pon_gpon_pmapi.(855)pm_pon_get_tcon] iTcontid = 9, Inst does not exist!
+[PON] Call pm_pon_get_tcont error,dwRet=-6,TcontID=9
+[zxic_omci_ mtk7603 rt28xx_open
+mng_event_callba7603,rt28xx_init..........
+ck]Call pFucMngETX_BCN DESC c1555800 size = 1600
+xec ucRet=1
+[GRX[0] DESC c1556000 size = 2048
+oldenSea]TcontIDRX[1] DESC c1556800 size = 2048
+[9], policy:0, pqinfo:0
+11930:23:12 [oE2pAccessMode=4
+mci][Error] [poncfg_mode=9
+_gpon_pmapi.(855cfg_mode=9
+)pm_pon_get_tconwmode_band_equal(): Band Equal!
+] iTcontid = 10, Inst does not eAPSDCapable[0]=0
+xist!
+[PON] CaAPSDCapable[1]=0
+ll pm_pon_get_tcAPSDCapable[2]=0
+ont error,dwRet=APSDCapable[3]=0
+-6,TcontID=10
+APSDCapable[4]=0
+[zxic_omci_mng_eAPSDCapable[5]=0
+vent_callback]CaAPSDCapable[6]=0
+ll pFucMngExec uAPSDCapable[7]=0
+cRet=1
+[GoldenAPSDCapable[8]=0
+Sea]TcontID[10],APSDCapable[9]=0
+ policy:0, pqinfAPSDCapable[10]=0
+o:0
+11930:23:1APSDCapable[11]=0
+2 [omci][Error] APSDCapable[12]=0
+[pon_gpon_pmapi.APSDCapable[13]=0
+(855)pm_pon_get_APSDCapable[14]=0
+tcon] iTcontid =APSDCapable[15]=0
+ 11, Inst does not exist!
+[PONKey1Str is Invalid key length(0) or Type(0)
+] Call pm_pon_geKey1Str is Invalid key length(0) or Type(0)
+t_tcont error,dwKey1Str is Invalid key length(0) or Type(0)
+Ret=-6,TcontID=1Key1Str is Invalid key length(0) or Type(0)
+1
+[zxic_omci_mKey2Str is Invalid key length(0) or Type(0)
+ng_event_callbacKey2Str is Invalid key length(0) or Type(0)
+k]Call pFucMngExKey2Str is Invalid key length(0) or Type(0)
+ec ucRet=1
+[GoKey2Str is Invalid key length(0) or Type(0)
+ldenSea]TcontID[Key3Str is Invalid key length(0) or Type(0)
+11], policy:0, pKey3Str is Invalid key length(0) or Type(0)
+qinfo:0
+11930:Key3Str is Invalid key length(0) or Type(0)
+23:12 [omci][ErrKey3Str is Invalid key length(0) or Type(0)
+or] [pon_gpon_pmKey4Str is Invalid key length(0) or Type(0)
+api.(855)pm_pon_Key4Str is Invalid key length(0) or Type(0)
+get_tcon] iTcontKey4Str is Invalid key length(0) or Type(0)
+id = 12, Inst doKey4Str is Invalid key length(0) or Type(0)
+es not exist!
+[PON] Call pm_pon_get_tcont error,dwRet=-6,TcontID=12
+[zxic_omci_mng_event_callback]Call pFucMngExec ucRet=1
+[GoldenSea]TcontID[12], policy:0, pqinfo:0
+11FW Version:930:23:12 [omci]a[Error] [pon_gpopn_pmapi.(855)pm__pon_get_tcon] iTpcontid = 13, Insct does not existi!
+[PON] Call pem_pon_get_tcont error,dwRet=-6,TcontID=13
+[zxic_omci_mng_event
+_callback]Call pFW Build Date:FucMngExec ucRet2=1
+6GoldenSea]0TcontID[13], pol1icy:0, pqinfo:0
+11930:23:12 [o0mci][Error] [pon1_gpon_pmapi.(8550)pm_pon_get_tcon7] iTcontid = 14,1 Inst does not e0xist!
+[PON] Ca0ll pm_pon_get_tc7ont error,dwRet=5-6,TcontID=14
+5[zxic_omci_mng_event_callback]Ca
+ll pFucMngExec uCmdAddressLenReq:(ret = 0)
+cRet=1
+[GoldenSea]TconCmdFwStartReq: override = 1, address = 1048576
+tID[14], policy:CmdStartDLRsp: WiFI FW Download Success
+0, pqinfo:0
+11930:23:12 [omci][Error] [pon_gpon_pmapi.(855)pm_pon_get_tcon] iTcontid = 15, Inst does not exist!
+[PON] Call pm_pon_get_tcont error,dwRet=-6,TcontID=15
+[zxic_omci_mAsicDMASchedulerInit(): DMA Scheduler Mode=0(LMAC)
+ng_event_callbacefuse_probe: efuse = 10000002
+k]Call pFucMngExRtmpChipOpsEepromHook::e2p_type=4, inf_Type=5
+ec ucRet=1
+[GoRtmpEepromGetDefault::e2p_dafault=1
+ldenSea]TcontID[RtmpChipOpsEepromHook: E2P type(4), E2pAccessMode = 4, E2P default = 1
+15], policy:0, pNVM is BIN mode
+qinfo:0
+[zxic_1. Phy Mode = 14
+omci_mng_event_cCal Free IC!!
+onfig] Event (0x@@@  NICReadEEPROMParameters : pAd->FWLoad=0
+05010010) no found!
+[zxic_omci_mng_event_config] Event (0x05010003) no found!
+[zxic_omci_mng_event_config] Event (0x0501000d) no found!
+[zxic_omci_mng_event_config] Event (0x05010005) no found!
+[zxic_omci_mng_event_config] Event (0x05010006) no found!
+[zxic_omci_mng_event_config] Event (0x05010005) no found!
+[zxic_omci_mng_event_config] Event (0x05010006) no found!
+[zxic_omci_mng_event_config] Event (0x05010002) no found!
+Country Region from e2p = ffff
+tssi_1_target_pwr_g_band = 12
+2. Phy Mode = 14
+3. Phy Mode = 14
+NICInitPwrPinCfg(14): Not support for HIF_MT yet!
+NICInitializeAsic(585): Not support rtmp_mac_sys_reset () for HIF_MT yet!
+mt_mac_init()-->
+mt7603_init_mac_cr()-->
+AsicSetMacMaxLen(1843): Set the Max RxPktLen=1024!
+<--mt_mac_init()
+        WTBL Segment 1 info:
+                MemBaseAddr/FID:0x28000/0
+                EntrySize/Cnt:32/128
+        WTBL Segment 2 info:
+                MemBaseAddr/FID:0x40000/0
+                EntrySize/Cnt:64/128
+        WTBL Segment 3 info:
+                MemBaseAddr/FID:0x42000/64
+                EntrySize/Cnt:64/128
+        WTBL Segment 4 info:
+                MemBaseAddr/FID:0x44000/128
+                EntrySize/Cnt:32/128
+AntCfgInit(2605): Not support for HIF_MT yet!
+MCS Set = ff ff 00 00 01
+AsicSetRalinkBurstMode(4182): Not support for HIF_MT yet!
+RTMPSetPiggyBack(894): Not support for HIF_MT yet!
+AsicSetTxPreamble(4169): Not support for HIF_MT yet!
+The 4-BSSID mode is enabled, the BSSID byte5 MUST be the multiple of 4
+AsicSetPreTbtt(): bss_idx=0, PreTBTT timeout = 0xa0
+Main bssid = b0:30:55:a1:13:fe
+<==== rt28xx_init, Status=0
+7603,RTMPDrvOpen..........
+@@@ ed_monitor_exit : ===>
+@@@ ed_monitor_exit : <===
+mt7603_set_ed_cca: TURN OFF EDCCA  mac 0x10618 = 0xd7083f0f, EDCCA_Status=0
+WiFi Startup Cost (wlan0): 0.600s
+register rt2860
+init the wifi hardware forward handler(to idm0)
+init the wifi hardware forward handler(to idm1)
+rt2860 0000:01:00.0: enabling device (0140 -> 0142)
+
+
+=== pAd = e9501000, size = 2061040 ===
+
+<-- RTMPAllocTxRxRingMemory, Status=0
+<-- RTMPAllocAdapterBlock, Status=0
+pAd->CSRBaseAddress =0xe9400000, csr_addr=0xe9400000!
+device_id =0x7662
+==>rlt_wlan_chip_onoff(): OnOff:1, Reset= 1, pAd->WlanFunCtrl:0x0, Reg-WlanFunCtrl=0x20a
+RtmpChipOpsEepromHook::e2p_type=0, inf_Type=5
+RtmpEepromGetDefault::e2p_dafault=1
+NVM is efuse and the information is too less to bring up the interface
+Force to use Flash mode
+NVM is FLASH mode (pAd->flash_offset = 0x40000)
+get_dev_name_prefix(): dev_idx = 0, dev_name_prefix=wlan
+build time =
+20141115060606a
+rom patch for E3 IC
+
+platform =
+ALPS
+hw/sw version =
+▒▒
+patch version =
+
+FW Version:0.0.00 Build:1
+Build Time:201507311614____
+fw for E3 IC
+rtmp_get_default_bin_file_by_chip::chip version=0x7612
+rtmp_get_default_bin_file_by_chip(): Found E2P bin file name:MT7612E_EEPROM.bin
+rtmp_get_default_bin_file_by_chip::Found E2P bin file name=MT7612E_EEPROM.bin
+rtmp_ee_flash_reset()::src = /wlan/MT7612E_EEPROM.bin
+RX[0] DESC c1fc4000 size = 8192
+RX[1] DESC c1fc2000 size = 8192
+
+ creat thread : RtmpCmdQTask
+ creat thread : RtmpWscTask
+ creat thread : RtmpMlmeTaskE2pAccessMode=4
+cfg_mode=14
+cfg_mode=14
+wmode_band_equal(): Band Not Equal!
+APSDCapable[0]=0
+APSDCapable[1]=0
+APSDCapable[2]=0
+APSDCapable[3]=0
+APSDCapable[4]=0
+APSDCapable[5]=0
+APSDCapable[6]=0
+APSDCapable[7]=0
+APSDCapable[8]=0
+APSDCapable[9]=0
+APSDCapable[10]=0
+APSDCapable[11]=0
+APSDCapable[12]=0
+APSDCapable[13]=0
+APSDCapable[14]=0
+APSDCapable[15]=0
+Key1Str is Invalid key length(0) or Type(0)
+Key1Str is Invalid key length(0) or Type(0)
+Key1Str is Invalid key length(0) or Type(0)
+Key1Str is Invalid key length(0) or Type(0)
+Key2Str is Invalid key length(0) or Type(0)
+Key2Str is Invalid key length(0) or Type(0)
+Key2Str is Invalid key length(0) or Type(0)
+Key2Str is Invalid key length(0) or Type(0)
+Key3Str is Invalid key length(0) or Type(0)
+Key3Str is Invalid key length(0) or Type(0)
+Key3Str is Invalid key length(0) or Type(0)
+Key3Str is Invalid key length(0) or Type(0)
+Key4Str is Invalid key length(0) or Type(0)
+Key4Str is Invalid key length(0) or Type(0)
+Key4Str is Invalid key length(0) or Type(0)
+Key4Str is Invalid key length(0) or Type(0)
+1. Phy Mode = 49
+get_chl_grp:illegal channel (167)
+get_chl_grp:illegal channel (167)
+get_chl_grp:illegal channel (169)
+get_chl_grp:illegal channel (169)
+get_chl_grp:illegal channel (171)
+get_chl_grp:illegal channel (171)
+Country Region from e2p = ffff
+mt76x2_read_temp_info_from_eeprom:: is_temp_tx_alc=1, temp_tx_alc_enable=1
+mt76x2_get_external_lna_gain::LNA type=0x1, BLNAGain=0xffffff8c, ALNAGain0=0xffffff8c, ALNAGain1=0xffffff8c, ALNAGain2=0xffffff8c
+2. Phy Mode = 49
+3. Phy Mode = 49
+andes_pci_fw_init
+0x1300 = 00073200
+AntCfgInit: primary/secondary ant 0/1
+andes_load_cr:cr_type(2)
+ChipStructAssign(): MT76x2 hook !
+MCS Set = ff ff 00 00 01
+mt76x2_bbp_adjust():rf_bw=2, ext_ch=1, PrimCh=149, HT-CentCh=151, VHT-CentCh=155
+APStartUp(): AP Set CentralFreq at 155(Prim=149, HT-CentCh=151, VHT-CentCh=155, BBP_BW=2)
+mt76x2_calibration(channel = 155)
+The 4-BSSID mode is enabled, the BSSID byte5 MUST be the multiple of 4
+Main bssid = b0:30:55:a1:13:ff
+mt76x2_reinit_agc_gain:original agc_vga0 = 0x48, agc_vga1 = 0x48
+mt76x2_reinit_agc_gain:updated agc_vga0 = 0x48, agc_vga1 = 0x48
+mt76x2_reinit_hi_lna_gain:original hi_lna0 = 0x33, hi_lna1 = 0x33
+mt76x2_reinit_hi_lna_gain:updated hi_lna0 = 0x33, hi_lna1 = 0x33
+original vga value(chain0) = 48
+original vga value(chain1) = 48
+<==== rt28xx_init, Status=0
+get_dev_name_prefix(): dev_idx = 0, dev_name_prefix=wlan
+get_dev_name_prefix(): dev_idx = 0, dev_name_prefix=wlan
+get_dev_name_prefix(): dev_idx = 0, dev_name_prefix=wlan
+RTMPDrvOpen(1):Check if PDMA is idle!
+RTMPDrvOpen(2):Check if PDMA is idle!
+11930:23:15 [OSS_cspd][Warn] [oss_sche.c(849)RunProcess] RunProcess process[route_mgr] Event[0x1103] dwUsedTicks[303]
+iptables: Bad rule (does a matching rule exist in that chain?).
+iptables: Bad rule (does a matching rule exist in that chain?).
+ip6tables: Bad rule (does a matching rule exist in that chain?).
+ip6tables: Bad rule (does a matching rule exist in that chain?).
+iptables: Bad rule (does a matching rule exist in that chain?).
+iptables: Bad rule (does a matching rule exist in that chain?).
+iptables: Bad rule (does a matching rule exist in that chain?).
+iptables: No chain/target/match by that name.
+iptables: No chain/target/match by that name.
+iptables: No chain/target/match by that name.
+11930:23:15 [samba][Warn] [samba_mgr.c(482)sambaIgdServerI] added one igd samba account instance success(1)!
+ip6tables: No chain/target/match by that name.
+ip6tables: No chain/target/match by that name.
+iptables: Bad rule (does a matching rule exist in that chain?).
+iptables: Bad rule (does a matching rule exist in that chain?).
+iptables: Bad rule (does a matching rule exist in that chain?).
+net_ratelimit: 13 callbacks suppressed
+11930:23:15 [OSS_cspd][Warn] [oss_sche.c(849)RunProcess] RunProcess process[wlan_config] Event[0xa204] dwUsedTicks[321]
+11930:23:15 [wlan_config][Warn] [pon_wlan_adapte(2899)rlk_wlan_setup_]
+11930:23:15 [wlan_config][Error] [wlan_config.c(1665)wlan_acl_init] Call func fail, setup_acl_list:-1
+11930:23:16 [fm_mgr][Warn] [fm_mgr.c(5401)si_fm_igd_serve] added one igd ftp account instance success(1)!
+11930:23:16 [OSS_cspd][Warn] [oss_common.c(741)SSEND] WARNING : [00010102] SSEND  Message[0X9702] to [00010102]  for sender is equal to receiver
+11930:23:16 [OSS_cspd][Warn] [oss_common.c(741)SSEND] WARNING : [00010102] SSEND  Message[0X9701] to [00010102]  for sender is equal to receiver
+The 4-BSSID mode is enabled, the BSSID byte5 MUST be the multiple of 4
+7603,RTMPDrvClose..........
+MTPciPollTxRxEmpty
+<Tbl name="DevAuthInfo" RowCount="6">
+        <Row No="0">
+                <DM name="ViewName" val="IGD.AU1"/>
+                <DM name="Enable" val="1"/>
+                <DM name="IsOnline" val="0"/>
+                <DM name="AppID" val="1"/>
+                <DM name="User" val="admin"/>
+                <DM name="Pass" val="admin"/>
+                <DM name="Level" val="1"/>
+                <DM name="Extra" val=""/>
+                <DM name="ExtraInt" val="0"/>
+        </Row>
+        <Row No="1">
+                <DM name="ViewName" val="IGD.AU2"/>
+                <DM name="Enable" val="1"/>
+                <DM name="IsOnline" val="0"/>
+                <DM name="AppID" val="1"/>
+                <DM name="User" val="user"/>
+                <DM name="Pass" val="2tTmV2C6"/>
+                <DM name="Level" val="2"/>
+                <DM name="Extra" val=""/>
+                <DM name="ExtraInt" val="0"/>
+        </Row>
+        <Row No="2">
+                <DM name="ViewName" val="IGD.AU3"/>
+                <DM name="Enable" val="1"/>
+                <DM name="IsOnline" val="0"/>
+                <DM name="AppID" val="2"/>
+                <DM name="User" val="root"/>
+                <DM name="Pass" val="public"/>
+                <DM name="Level" val="2"/>
+                <DM name="Extra" val=""/>
+                <DM name="ExtraInt" val="0"/>
+        </Row>
+        <Row No="3">
+                <DM name="ViewName" val="IGD.AU4"/>
+                <DM name="Enable" val="1"/>
+                <DM name="IsOnline" val="0"/>
+                <DM name="AppID" val="2"/>
+                <DM name="User" val=""/>
+                <DM name="Pass" val=AsicSetPreTbtt(): bss_idx=0, PreTBTT timeout = 0x0
+"zxic"/>
+                <DM RTMPSetPiggyBack(894): Not support for HIF_MT yet!
+name="Level" val="1"/>
+                <DM name="Extra" val=""/>
+                <DM name="ExtraInt" val="RT28xxPciAsicRadioOff(): Not support for HIF_MT yet!
+0"/>
+        </Row>
+        RTMPDrvClose call RT28xxPciAsicRadioOff fail !!
+<Row No="4">
+                tx_kickout_fail_count = 0
+<DM name="ViewNatx_timeout_fail_count = 0
+me" val="IGD.AU5rx_receive_fail_count = 0
+"/>
+                <DM name=alloc_cmd_msg = 43
+"Enable" val="1"free_cmd_msg = 43
+/>
+                <DM name="IsOnline" val="0"/>
+                <DM name="AppID" val="4"/>
+                <DM name="User" val="admin"/>
+                <DM name="Pass" val="admin"/>
+                <DM name="Level" val="1"/>
+                <DM name="Extra" val=""/>
+                <DM name="ExtraInt" val="0"/>
+        </Row>
+        <Row No="5">
+                <DM name="ViewName" val="IGD.AU6"/>
+                <DM name="Enable" val="0"/>
+                <DM name="IsOnline" val="0"/>
+                <DM name="AppID" val="5"/>
+                <DM name="User" val=""/>
+                <DM name="Pass" val="samba"/>
+                <DM name="Level" val="1"/>
+                <DM name="Extra" val=""/>
+                <DM name="ExtraInt" val="0"/>
+        </Row>
+</Tbl>
+<Tbl name="DevAuthInfo" RowCount="6">
+        <Row No="0">
+                <DM name="ViewName" val="IGD.AU1"/>
+                <DM name="Enable" val="1"/>
+                <DM name="IsOnline" val="0"/>
+                <DM name="AppID" val="1"/>
+                <DM name="User" val="admin"/>
+                <DM name="Pass" val="admin"/>
+                <DM name="Level" val="1"/>
+                <DM name="Extra" val=""/>
+                <DM name="ExtraInt" val="0"/>
+        </Row>
+        <Row No="1">
+                <DM name="ViewName" val="IGD.AU2"/>
+                <DM name="Enable" val="1"/>
+                <DM name="IsOnline" val="0"/>
+                <DM name="AppID" val="1"/>
+                <DM name="User" val="user"/>
+                <DM name="Pass" val="2tTmV2C6"/>
+                <DM name="Le mtk7603 rt28xx_open
+vel" val="2"/>
+7603,rt28xx_init..........
+                <DM name="ExtrTX_BCN DESC c1555800 size = 1600
+a" val=""/>
+                <RX[0] DESC c1556000 size = 2048
+DM name="ExtraInRX[1] DESC c1556800 size = 2048
+t" val="0"/>
+        </Row>
+        <Row No="2">
+                E2pAccessMode=4
+<DM name="ViewNacfg_mode=9
+me" val="IGD.AU3cfg_mode=9
+"/>
+                <DM name=wmode_band_equal(): Band Equal!
+"Enable" val="1"/>
+                <DM name="APSDCapable[0]=0
+IsOnline" val="0APSDCapable[1]=0
+"/>
+                <DM name=APSDCapable[2]=0
+"AppID" val="2"/APSDCapable[3]=0
+>
+                <DM name="UAPSDCapable[4]=0
+ser" val="root"/APSDCapable[5]=0
+>
+                <DM name="PAPSDCapable[6]=0
+ass" val="publicAPSDCapable[7]=0
+"/>
+                <DM name=APSDCapable[8]=0
+"Level" val="2"/APSDCapable[9]=0
+>
+                <DM name="EAPSDCapable[10]=0
+xtra" val=""/>
+APSDCapable[11]=0
+                <DM name="ExtrAPSDCapable[12]=0
+APSDCapable[13]=0
+
+        </Row>
+        <Row APSDCapable[14]=0
+No="3">
+                <DM nAPSDCapable[15]=0
+ame="ViewName" val="IGD.AU4"/>
+Key1Str is Invalid key length(0) or Type(0)
+                <DM name="EnabKey1Str is Invalid key length(0) or Type(0)
+le" val="1"/>
+        Key1Str is Invalid key length(0) or Type(0)
+        <DM name="IsOnlKey1Str is Invalid key length(0) or Type(0)
+ine" val="0"/>
+Key2Str is Invalid key length(0) or Type(0)
+                <DM name="AppIKey2Str is Invalid key length(0) or Type(0)
+D" val="2"/>
+                Key2Str is Invalid key length(0) or Type(0)
+<DM name="User" Key2Str is Invalid key length(0) or Type(0)
+val=""/>
+                <DM Key3Str is Invalid key length(0) or Type(0)
+name="Pass" val=Key3Str is Invalid key length(0) or Type(0)
+"zxic"/>
+                <DM Key3Str is Invalid key length(0) or Type(0)
+name="Level" valKey3Str is Invalid key length(0) or Type(0)
+="1"/>
+                <DM naKey4Str is Invalid key length(0) or Type(0)
+me="Extra" val="Key4Str is Invalid key length(0) or Type(0)
+"/>
+                <DM name=Key4Str is Invalid key length(0) or Type(0)
+"ExtraInt" val="Key4Str is Invalid key length(0) or Type(0)
+0"/>
+        </Row>
+        <Row No="4">
+                <DM name="ViewName" val="IGD.AU5"/>
+                <DM name="Enable" val="1"/>
+                <DM name="IsOnline" val="0"/>
+                <DM name="AppID" val="4"/>
+                <DM name="UFW Version:ser" val="admin"a/>
+                <DM name="pPass" val="admin_"/>
+                <DM name=p"Level" val="1"/c>
+                <DM name="Eixtra" val=""/>
+e               <DM name="ExtraInt" val="0"/>
+        </Row>
+        <Row No="5">
+                <DM n
+ame="ViewName" vFW Build Date:al="IGD.AU6"/>
+2               <DM name="Enab0le" val="0"/>
+        1       <DM name="IsOnl6ine" val="0"/>
+0               <DM name="AppI1D" val="5"/>
+                0<DM name="User" 7val=""/>
+                <DM 1name="Pass" val=0"samba"/>
+                <DM0 name="Level" va7l="1"/>
+                <DM n5ame="Extra" val=5""/>
+                <DM name="ExtraInt" val=
+"0"/>
+        </Row>
+AsicDMASchedulerInit(): DMA Scheduler Mode=0(LMAC)
+</Tbl>
+<Tbl namefuse_probe: efuse = 10000002
+e="PDTCTUSERINFORtmpChipOpsEepromHook::e2p_type=4, inf_Type=5
+RtmpEepromGetDefault::e2p_dafault=1
+
+        <Row No="0">
+RtmpChipOpsEepromHook: E2P type(4), E2pAccessMode = 4, E2P default = 1
+                <DM name="LimiNVM is BIN mode
+t" val="10"/>
+        1. Phy Mode = 14
+        <DM name="TimesCal Free IC!!
+" val="0"/>
+                <@@@  NICReadEEPROMParameters : pAd->FWLoad=1
+DM name="Status"Country Region from e2p = ffff
+ val="99"/>
+                <tssi_1_target_pwr_g_band = 12
+DM name="Result"2. Phy Mode = 14
+ val="99"/>
+                <3. Phy Mode = 14
+DM name="UserId"NICInitPwrPinCfg(14): Not support for HIF_MT yet!
+ val=""/>
+                <DMNICInitializeAsic(585): Not support rtmp_mac_sys_reset () for HIF_MT yet!
+ name="UserName"mt_mac_init()-->
+ val=""/>
+                <DMmt7603_init_mac_cr()-->
+ name="AutoRegFlAsicSetMacMaxLen(1843): Set the Max RxPktLen=1024!
+g" val="1"/>
+                <--mt_mac_init()
+<DM name="tForce        WTBL Segment 1 info:
+PushFlg" val="0"                MemBaseAddr/FID:0x28000/0
+/>
+                <DM name="              EntrySize/Cnt:32/128
+tAttTR069Status"        WTBL Segment 2 info:
+                MemBaseAddr/FID:0x40000/0
+ val="0"/>
+                <D              EntrySize/Cnt:64/128
+M name="SNEnable        WTBL Segment 3 info:
+                MemBaseAddr/FID:0x42000/64
+" val="0"/>
+                <               EntrySize/Cnt:64/128
+DM name="DealBoo        WTBL Segment 4 info:
+tEnable" val="1"                MemBaseAddr/FID:0x44000/128
+/>
+                <DM name="              EntrySize/Cnt:32/128
+ExclusiveBindEnaAntCfgInit(2605): Not support for HIF_MT yet!
+ble" val="0"/>
+MCS Set = ff ff 00 00 01
+                <DM name="ConnAsicSetRalinkBurstMode(4182): Not support for HIF_MT yet!
+DoubleNMSEnable"RTMPSetPiggyBack(894): Not support for HIF_MT yet!
+ val="0"/>
+                <DM name="CPEInstallationType" val="1"/>
+                <DM name="TR069TypeReport" val="0"/>
+                <DM name="CheckRegistEnable" val="0"/>
+                <DM name="ServiceName" val=""/>
+                <DM name="ServiceNum" val="0"/>
+                <DM name="EventBind1Mode" val="0"/>
+                <DM name="PingEnable" val="0"/>
+                <DM AsicSetTxPreamble(4169): Not support for HIF_MT yet!
+name="LosAlarmEnThe 4-BSSID mode is enabled, the BSSID byte5 MUST be the multiple of 4
+AsicSetPreTbtt(): bss_idx=0, PreTBTT timeout = 0xa0
+
+                <DM name="OltMain bssid = b0:30:55:a1:13:fe
+RegTimeOut" val="24000"/>
+                <DM name="T<==== rt28xx_init, Status=0
+r069WanUpTimeOut7603,RTMPDrvOpen..........
+@@@ ed_monitor_exit : ===>
+
+                <DM name="Itm@@@ ed_monitor_exit : <===
+sRegTimeOut" valmt7603_set_ed_cca: TURN OFF EDCCA  mac 0x10618 = 0xd7083f0f, EDCCA_Status=0
+="12000"/>
+                <DWiFi Startup Cost (wlan0): 0.450s
+M name="ItmsConfigTimeOut" val="60000"/>
+                <DM name="UnconfigAlarmFlag" val="1"/>
+                <DM name="BindResendEnable" val="0"/>
+                <DM name="BindAloneEnable" val="1"/>
+                <DM name="RegMode" val="0"/>
+                <DM name="FirstRegisted" val="0"/>
+                <DM name="RouteStatus" val="1"/>
+                <DM name="OltRegTime" val="0"/>
+                <DM name="Tr069WanUpTime" val="0"/>
+                <DM name="ItmsRegTime" val="0"/>
+                <DM name="ItmsConfigTime" val="0"/>
+                <DM name="Province" val="CHQ"/>
+        </Row>
+</Tbl>
+<Tbl name="WLANCfg" RowCount="8">
+        <Row No="0">
+                <DM name="ViewName" val="IGD.LD1.WLAN1"/>
+                <DM name="LANDViewName" val="IGD.LD1"/>
+                <DM name="ValidIf" val="1"/>
+                <DM name="InstExist" val="1"/>
+                <DM name="Enable" val="1"/>
+                <DM name="ESSID" val="CMCC-Ke5w"/>
+                <DM name="ESSIDPrefix" val=""/>
+                <DM name="Priority" val="0"/>
+                <DM name="ACLPolicy" val="2"/>
+                <DM name="BeaconType" val="6"/>
+                <DM name="MACAddressControlEnabled" val="0"/>
+                <DM name="ESSIDHideEnable" val="0"/>
+                <DM name="BeaconEnabled" val="1"/>
+                <DM name="WEPAuthMode" val="2"/>
+                <DM name="WEPLevel" val="1"/>
+                <DM name="WEPKeyIndex" val="1"/>
+                <DM name="WPAEncryptType" val="2"/>
+                <DM name="WPAAuthMode" val="0"/>
+                <DM name="11iEncryptType" val="2"/>
+                <DM name="11iAuthMode" val="0"/>
+                <DM name="WPAGroupRekey" val="0"/>
+                <DM name="WPAEAPServerIp" val="192.168.1.1"/>
+                <DM name="WPAEAPSecret" val="12345678"/>
+                <DM name="MaxUserNum" val="16"/>
+                <DM name="VapIsolationEnable" val="0"/>
+                <DM name="BasicEncryptionModes" val="0"/>
+                <DM name="LocalSetEnable" val="1"/>
+                <DM name="EnableCalledID" val="1"/>
+                <DM name="EnableUserID" val="1"/>
+                <DM name="RadiusAccountEnable" val="0"/>
+                <DM name="SSID_IDX" val="0"/>
+                <DM name="InstISPExist" val="0"/>
+                <DM name="DownTagStripEnable" val="1"/>
+                <DM name="UpTagEnable" val="0"/>
+                <DM name="Vlan" val="0"/>
+                <DM name="VlanPriority" val="0"/>
+                <DM name="SimCardFileId" val="43"/>
+        </Row>
+        <Row No="1">
+                <DM name="ViewName" val="IGD.LD1.WLAN2"/>
+                <DM name="LANDViewName" val="IGD.LD1"/>
+                <DM name="ValidIf" val="1"/>
+                <DM name="InstExist" val="1"/>
+                <DM name="Enable" val="0"/>
+                <DM name="ESSID" val="SSID2"/>
+                <DM name="ESSIDPrefix" val=""/>
+                <DM name="Priority" val="0"/>
+                <DM name="ACLPolicy" val="2"/>
+                <DM name="BeaconType" val="6"/>
+                <DM name="MACAddressControlEnabled" val="0"/>
+                <DM name="ESSIDHideEnable" val="0"/>
+                <DM name="BeaconEnabled" val="1"/>
+                <DM name="WEPAuthMode" val="2"/>
+                <DM name="WEPLevel" val="1"/>
+                <DM name="WEPKeyIndex" val="1"/>
+                <DM name="WPAEncryptType" val="2"/>
+                <DM name="WPAAuthMode" val="0"/>
+                <DM name="11iEncryptType" val="2"/>
+                <DM name="11iAuthMode" val="0"/>
+                <DM name="WPAGroupRekey" val="0"/>
+                <DM name="WPAEAPServerIp" val="192.168.1.1"/>
+                <DM name="WPAEAPSecret" val="12345678"/>
+                <DM name="MaxUserNum" val="8"/>
+                <DM name="VapIsolationEnable" val="0"/>
+                <DM name="BasicEncryptionModes" val="0"/>
+                <DM name="LocalSetEnable" val="0"/>
+                <DM name="EnableCalledID" val="1"/>
+                <DM name="EnableUserID" val="1"/>
+                <DM name="RadiusAccountEnable" val="0"/>
+                <DM name="SSID_IDX" val="0"/>
+                <DM name="InstISPExist" val="0"/>
+                <DM name="DownTagStripEnable" val="1"/>
+                <DM name="UpTagEnable" val="0"/>
+                <DM name="Vlan" val="0"/>
+                <DM name="VlanPriority" val="0"/>
+                <DM name="SimCardFileId" val="44"/>
+        </Row>
+        <Row No="2">
+                <DM name="ViewName" val="IGD.LD1.WLAN3"/>
+                <DM name="LANDViewName" val="IGD.LD1"/>
+                <DM name="ValidIf" val="1"/>
+                <DM name="InstExist" val="1"/>
+                <DM name="Enable" vEntryLifeCheck Cnt = 200.
+al="0"/>
+                <DM cfg_mode=9
+name="ESSID" valwmode_band_equal(): Band Equal!
+="SSID3"/>
+                <DM name="sip alg change port ok!
+ESSIDPrefix" valftp alg change port ok!
+=""/>
+                <DM name="Priority" val="0"/>
+                <DM name="ACLPAsicAddSharedKeyEntry(2009): Not support for HIF_MT yet!
+olicy" val="0"/>
+                <DM name="BeaconType" val="6"/>
+                <DM name="MACAddressControlEnabled" val="0"/>
+                <DM name="ESSIDHideEnable" val="0"/>
+11930:23:17 [wlan_config][Warn] [pon_wlan_adapte(4641)rlk_wlan_ioctl_] set wlan0 mcs_switch=0
+                <DM name="BeaconEnabled" val="1"/>
+                <DM name="WEPAuthMode" val="2"/>
+                <DM name="WEPLevel" val="1"/>
+                <DM name="WEPKeyIndex" val="1"/>
+                <DM name="WPAEncryptType" val="2"/>
+                <DM name="WPAAuthMode" val="0"/>
+                <DM name="11iEncryptType" val="2"/>
+11930:23:17 [wlan_config][Warn] [pon_wlan_adapte(4641)rlk_wlan_ioctl_] set wlan0 assocctl=0
+                <DM name="11iAuthMode" val="0"/>
+                <DM name="WPAGroupRekey" val="0"/>
+                <DM name="WPAEAPServerIp" val="192.168.1.1"/>
+                <DM name="WPAEAPSecret" val="12345678"/>
+11930:23:17 [wlan_config][Warn] [pon_wlan_adapte(4641)rlk_wlan_ioctl_] set wlan0 NoForwardingMBCast=0
+                <DM name="MaxUserNum" val="16"/>
+                <DM name="VapIsolationEnable" val="0"/>
+                <DM name="BAsicAddSharedKeyEntry(2009): Not support for HIF_MT yet!
+asicEncryptionModes" val="0"/>
+                <DM name="LocalSetEnable" val="0"/>
+                <DM name="EnableCalledID" val="1"/>
+                <DM name="EnableUserID" val="1"/>
+                <DM name="RadiusAccountEnable" val="0"/>
+                <DM name="SSID_IDX" val="0"/>
+11930:23:17 [firewall][Error] [fwport_mgr.c(150)si_fwport_port_] plib_fw_port_register_api() unregister port fail!
+                <DM name="InstISPExist" val="0"/>
+                <DM name="DownTagStripEnable" val="1"/>
+                <DM name="UpTagEnable" val="0"/>
+                <DM name="Vlan" val="0"/>
+                <DM name="VlanPriority" val="0"/>
+                <DM name="SimCardFileId" val="45"/>
+        </Row>
+        <Row No="3">
+                <DM name="ViewName" val="IGD.LD1.WLAN4"/>
+                <DM name="LANDViewName" val="IGD.LD1"/>
+                <DM name="ValidIf" val="1"/>
+                <DM name="InstExist" val="1"/>
+                <DM name="Enable" val="0"/>
+                <DM name="ESSID" val="SSID4"/>
+                <DM name="ESSIDPrefix" val=""/>
+                <DM name="Priority" val="0"/>
+                <DM name="ACLPolicy" val="0"/>
+                <DM name="BeaconType" val="6"/>
+                <DM name="MACAddressControlEnabled" val="0"/>
+                <DM name="ESSIDHideEnable" val="0"/>
+11930:23:17 [wlan_config][Warn] [pon_wlan_adapte(4641)rlk_wlan_ioctl_] set wlan0 UseZTERateAlg=1
+                <DM name="BeaconEnabled" val="1"/>
+                <DM name="WEPAuthMode" val="2"/>
+                <DM name="WEPLevel" val="1"/>
+                <DM name="WEPKeyIndex" val="1"/>
+                <DM name="WPAEncryptType" val="2"/>
+                <DM name="WPAAuthMode" val="0"/>
+                <DM name="11iEncryptType" val="2"/>
+                <DM name="11iAuthMode" val="0"/>
+                <DM name="WPAGroupRekey" val="0"/>
+11930:23:17 [wlan_config][Warn] [pon_wlan_adapte(4641)rlk_wlan_ioctl_] set wlan0 WmmType=0
+                <DM name="WPAEAPServerIp" val="192.168.1.1"/>
+                <DM name="WPAEAPSecret" val="12345678"/>
+                <DM name="MaxUserNum" val="16"/>
+                <DM name="VapIsolationEnable" val="0"/>
+                <DM name="BasicEncryptionModes" val="0"/>
+                <DM name="LocalSetEnable" val="0"/>
+                <DM name="EnableCalledID" val="1"/>
+                <DM name="EnableUserID" val="1"/>
+                <DM name="RadiusAccountEnable" val="0"/>
+                <DM name="SSID_IDX" val="0"/>
+                <DM name="InstISPExist" val="0"/>
+                <DM name="DownTagStripEnable" val="1"/>
+                <DM name="UpTagEnable" val="0"/>
+                <DM name="Vlan" val="0"/>
+                <DM name="VlanPriority" val="0"/>
+                <DM name="SimCardFileId" val="46"/>
+        </Row>
+        <Row No="4">
+                <DM name="ViewName" val="IGD.LD1.WLAN5"/>
+                <DM name="LANDViewName" val="IGD.LD1"/>
+                <DM name="ValidIf" val="1"/>
+                <DM name="InstExist" val="1"/>
+                <DM name="Enable" val="1"/>
+                <DM name="ESSID" val="CMCC-Ke5w-5G"/>
+                <DM name="ESSIDPrefix" val=""/>
+                <DM name="Priority" val="0"/>
+                <DM name="ACLPolicy" val="2"/>
+                <DM name="BeaconType" val="6"/>
+                <DM name="MACAddressControlEnabled" val="0"/>
+                <DM name="ESSIDHideEnable" val="0"/>
+                <DM name="BeaconEnabled" val="1"/>
+                <DM name="WEPAuthMode" val="2"/>
+                <DM name="WEPLevel" val="1"/>
+                <DM name="WEPKeyIndex" val="1"/>
+                <DM name="WPAEncryptType" val="2"/>
+                <DM name="WPAAuthMode" val="0"/>
+                <DM name="11iEncryptType" val="2"/>
+                <DM name="11iAuthMode" val="0"/>
+                <DM name="WPAGroupRekey" val="0"/>
+                <DM name="WPAEAPServerIp" val="192.168.1.1"/>
+                <DM name="WPAEAPSecret" val="12345678"/>
+                <DM name="MaxUserNum" val="40"/>
+                <DM name="VapIsolationEnable" val="0"/>
+                <DM name="BasicEncryptionModes" val="0"/>
+iptables: Bad rule (does a matching rule exist in that chain?).
+                <DM name="LocalSetEnable" val="1"/>
+                <DM name="EnableCalledID" val="1"/>
+                <DM namrtsp alg change port ok!
+e="EnableUserID" val="1"/>
+                <DM name="RadiusAccountEnable" val="0"/>
+                <DM name="SSID_IDX" val="0"/>
+                <DM name="InstISPExist" val="0"/>
+                <DM name="DownTagStripEnable" val="1"/>
+                <DM name="UpTagEnable" val="0"/>
+                <DM name="Vlan" val="0"/>
+                <DM name="VlanPriority" val="0"/>
+                <DM name="SimCardFileId" val="47"/>
+        </Row>
+        <Row No="5">
+                <DM name="ViewName" val="IGD.LD1.WLAN6"/>
+                <DM name="LANDViewName" val="IGD.LD1"/>
+                <DM name="ValidIf" val="1"/>
+                <DM name="InstExist" val="1"/>
+                <DM name="Enable" val="0"/>
+                <DM name="ESSID" val="SSID6"/>
+                <DM name="ESSIDPrefix" val=""/>
+                <DM name="Priority" val="0"/>
+                <DM name="ACLPolicy" val="2"/>
+                <DM name="BeaconType" val="6"/>
+                <DM name="MACAddressControlEnabled" val="0"/>
+                <DM name="ESSIDHideEnable" val="0"/>
+                <DM name="BeaconEnabled" val="1"/>
+                <DM name="WEPAuthMode" val="2"/>
+                <DM name="WEPLevel" val="1"/>
+                <DM name="WEPKeyIndex" val="1"/>
+                <DM name="WPAEncryptType" val="2"/>
+                <DM name="WPAAuthMode" val="0"/>
+                <DM name="11iEncryptType" val="2"/>
+                <DM name="11iAuthMode" val="0"/>
+                <DM name="WPAGroupRekey" val="0"/>
+                <DM name="WPAEAPServerIp" val="192.168.1.1"/>
+                <DM name="WPAEAPSecret" val="12345678"/>
+                <DM name="MaxUserNum" val="40"/>
+                <DM name="VapIsolationEnable" val="0"/>
+                <DM name="BasicEncryptionModes" val="0"/>
+                <DM name="LocalSetEnable" val="0"/>
+                <DM name="EnableCalledID" val="1"/>
+                <DM name="EnableUserID" val="1"/>
+                <DM name="RadiusAccountEnable" val="0"/>
+                <DM name="SSID_IDX" val="0"/>
+                <DM name="InstISPExist" val="0"/>
+                <DM name="DownTagStripEnable" val="1"/>
+                <DM name="UpTagEnable" val="0"/>
+                <DM name="Vlan" val="0"/>
+                <DM name="VlanPriority" val="0"/>
+                <DM name="SimCardFileId" val="48"/>
+        </Row>
+        <Row No="6">
+                <DM name="ViewName" val="IGD.LD1.WLAN7"/>
+                <DM name="LANDViewName" val="IGD.LD1"/>
+                <DM name="ValidIf" val="1"/>
+                <DM name="InstExist" val="1"/>
+                <DM name="Enable" val="0"/>
+                <DM name="ESSID" val="SSID7"/>
+                <DM name="ESSIDPrefix" val=""/>
+                <DM name="Priority" val="0"/>
+                <DM name="ACLPolicy" val="2"/>
+                <DM name="BeaconType" val="6"/>
+                <DM name="MACAddressControlEnabled" val="0"/>
+                <DM name="ESSIDHideEnable" val="0"/>
+                <DM name="BeaconEnabled" val="1"/>
+                <DM name="WEPAuthMode" val="2"/>
+                <DM name="WEPLevel" val="1"/>
+                <DM name="WEPKeyIndex" val="1"/>
+                <DM name="WPAEncryptType" val="2"/>
+                <DM name="WPAAuthMode" val="0"/>
+                <DM name="11iEncryptType" val="2"/>
+                <DM name="11iAuthMode" val="0"/>
+                <DM name="WPAGroupRekey" val="0"/>
+                <DM name="WPAEAPServerIp" val="192.168.1.1"/>
+                <DM name="WPAEAPSecret" val="12345678"/>
+                <DM name="MaxUserNum" val="40"/>
+                <DM name="VapIsolationEnable" val="0"/>
+                <DM name="BasicEncryptionModes" val="0"/>
+                <DM name="LocalSetEnable" val="0"/>
+                <DM name="EnableCalledID" val="1"/>
+                <DM name="EnableUserID" val="1"/>
+                <DM name="RadiusAccountEnable" val="0"/>
+                <DM name="SSID_IDX" val="0"/>
+                <DM name="InstISPExist" val="0"/>
+                <DM name="DownTagStripEnable" val="1"/>
+                <DM name="UpTagEnable" val="0"/>
+                <DM name="Vlan" val="0"/>
+                <DM name="VlanPriority" val="0"/>
+                <DM name="SimCardFileId" val="49"/>
+        </Row>
+        <Row No="7">
+                <DM name="ViewName" val="IGD.LD1.WLAN8"/>
+                <DM name="LANDViewName" val="IGD.LD1"/>
+                <DM name="ValidIf" val="1"/>
+                <DM name="InstExist" val="1"/>
+                <DM name="Enable" val="0"/>
+                <DM name="ESSID" val="SSID8"/>
+                <DM name="ESSIDPrefix" val=""/>
+                <DM name="Priority" val="0"/>
+                <DM name="ACLPolicy" val="2"/>
+                <DM name="BeaconType" val="6"/>
+                <DM name="MACAddressControlEnabled" val="0"/>
+                <DM name="ESSIDHideEnable" val="0"/>
+                <DM name="BeaconEnabled" val="1"/>
+                <DM name="WEPAuthMode" val="2"/>
+iptables: Bad rule (does a matching rule exist in that chain?).
+                <DM name="WEPLevel" val="1"/>
+                <DM name="WEPKeyIndex" val="1"/>
+                <DM name="WPAEncryptType" val="2"/>
+                <DM name="WPAAuthMode" val="0"/>
+                <DM name="11iEncryptType" val="2"/>
+                <DM name="11iAuthMode" val="0"/>
+                <DM name="WPAGroupRekey" val="0"/>
+                <DM name="WPAEAPServerIp" val="192.168.1.1"/>
+                <DM name="WPAEAPSecret" val="12345678"/>
+                <DM name="MaxUserNum" val="40"/>
+                <DM name="VapIsolationEnable" val="0"/>
+                <DM name="BasicEncryptionModes" val="0"/>
+                <DM name="LocalSetEnable" val="0"/>
+                <DM name="EnableCalledID" val="1"/>
+                <DM name="EnableUserID" val="1"/>
+                <DM name="RadiusAccountEnable" val="0"/>
+                <DM name="SSID_IDX" val="0"/>
+                <DM name="InstISPExist" val="0"/>
+                <DM name="DownTagStripEnable" val="1"/>
+                <DM name="UpTagEnable" val="0"/>
+                <DM name="Vlan" val="0"/>
+                <DM name="VlanPriority" val="0"/>
+                <DM name="SimCardFileId" val="50"/>
+        </Row>
+</Tbl>
+<Tbl name="WLANCfg" RowCount="8">
+        <Row No="0">
+                <DM name="ViewName" val="IGD.LD1.WLAN1"/>
+                <DM name="LANDViewName" val="IGD.LD1"/>
+                <DM name="ValidIf" val="1"/>
+                <DM name="InstExist" val="1"/>
+                <DM name="Enable" val="1"/>
+                <DM name="ESSID" val="CMCC-Ke5w"/>
+                <DM name="ESSIDPrefix" val=""/>
+                <DM name="Priority" val="0"/>
+                <DM name="ACLPolicy" val="2"/>
+                <DM name="BeaconType" val="6"/>
+                <DM name="MACAddressControlEnabled" val="0"/>
+                <DM name="ESSIDHideEnable" val="0"/>
+                <DM name="BeaconEnabled" val="1"/>
+                <DM name="WEPAuthMode" val="2"/>
+                <DM name="WEPLevel" val="1"/>
+                <DM name="WEPKeyIndex" val="1"/>
+                <DM name="WPAEncryptType" val="2"/>
+                <DM name="WPAAuthMode" val="0"/>
+                <DM name="11iEncryptType" val="2"/>
+                <DM name="11iAuthMode" val="0"/>
+                <DM name="WPAGroupRekey" val="0"/>
+                <DM name="WPAEAPServerIp" val="192.168.1.1"/>
+                <DM name="WPAEAPSecret" val="12345678"/>
+                <DM name="MaxUserNum" val="16"/>
+                <DM name="VapIsolationEnable" val="0"/>
+                <DM name="BasicEncryptionModes" val="0"/>
+                <DM name="LocalSetEnable" val="1"/>
+                <DM name="EnableCalledID" val="1"/>
+                <DM name="EnableUserID" val="1"/>
+                <DM name="RadiusAccountEnable" val="0"/>
+                <DM name="SSID_IDX" val="0"/>
+                <DM name="InstISPExist" val="0"/>
+                <DM name="DownTagStripEnable" val="1"/>
+                <DM name="UpTagEnable" val="0"/>
+                <DM name="Vlan" val="0"/>
+                <DM name="VlanPriority" val="0"/>
+                <DM name="SimCardFileId" val="43"/>
+        </Row>
+        <Row No="1">
+                <DM name="ViewName" val="IGD.LD1.WLAN2"/>
+                <DM name="LANDViewName" val="IGD.LD1"/>
+                <DM name="ValidIf" val="1"/>
+                <DM name="InstExist" val="1"/>
+                <DM name="Enable" val="0"/>
+                <DM name="ESSID" val="SSID2"/>
+                <DM name="ESSIDPrefix" val=""/>
+                <DM name="Priority" val="0"/>
+                <DM name="ACLPolicy" val="2"/>
+                <DM name="BeaconType" val="6"/>
+                <DM name="MACAddressControlEnabled" val="0"/>
+                <DM name="ESSIDHideEnable" val="0"/>
+                <DM name="BeaconEnabled" val="1"/>
+                <DM name="WEPAuthMode" val="2"/>
+                <DM name="WEPLevel" val="1"/>
+                <DM name="WEPKeyIndex" val="1"/>
+                <DM name="WPAEncryptType" val="2"/>
+                <DM name="WPAAuthMode" val="0"/>
+                <DM name="11iEncryptType" val="2"/>
+                <DM name="11iAuthMode" val="0"/>
+                <DM name="WPAGroupRekey" val="0"/>
+                <DM name="WPAEAPServerIp" val="192.168.1.1"/>
+                <DM name="WPAEAPSecret" val="12345678"/>
+                <DM name="MaxUserNum" val="8"/>
+                <DM name="VapIsolationEnable" val="0"/>
+                <DM name="BasicEncryptionModes" val="0"/>
+                <DM name="LocalSetEnable" val="0"/>
+                <DM name="EnableCalledID" val="1"/>
+                <DM name="EnableUserID" val="1"/>
+                <DM name="RadiusAccountEnable" val="0"/>
+                <DM name="SSID_IDX" val="0"/>
+                <DM name="InstISPExist" val="0"/>
+                <DM name="DownTagStripEnable" val="1"/>
+                <DM name="UpTagEnable" val="0"/>
+                <DM name="Vlan" val="0"/>
+                <DM name="VlanPriority" val="0"/>
+                <DM name="SimCardFileId" val="44"/>
+        </Row>
+        <Row No="2">
+                <DM name="ViewName" val="IGD.LD1.WLAN3"/>
+iptables: Bad rule (does a matching rule exist in that chain?).
+                <DM name="LANDViewName" val="IGD.LD1"/>
+                <DM name="ValidIf" val="1"/>
+                <DM name="InstExist" val="1"/>
+                <DM name="Enable" val="0"/>
+                <DM name="ESSID" val="SSID3"/>
+                <DM name="ESSIDPrefix" val=""/>
+                <DM name="Priority" val="0"/>
+                <DM name="ACLPolicy" val="0"/>
+                <DM name="BeaconType" val="6"/>
+                <DM name="MACAddressControlEnabled" val="0"/>
+                <DM name="ESSIDHideEnable" val="0"/>
+                <DM name="BeaconEnabled" val="1"/>
+                <DM name="WEPAuthMode" val="2"/>
+                <DM name="WEPLevel" val="1"/>
+                <DM name="WEPKeyIndex" val="1"/>
+                <DM name="WPAEncryptType" val="2"/>
+                <DM name="WPAAuthMode" val="0"/>
+                <DM name="11iEncryptType" val="2"/>
+                <DM name="11iAuthMode" val="0"/>
+                <DM name="WPAGroupRekey" val="0"/>
+                <DM name="WPAEAPServerIp" val="192.168.1.1<4000000008>11930:23:18 [Klogfile][Warn] [(1716)KLogThread] KLogThread,dwHalfFilePos:ERR
+"/>
+                <DM name="WPAEAPSecret" val="12345678"/>
+                <DM name="MaxUserNum" val="16"/>
+                <DM name="VapIsolationEnable" val="0"/>
+                <DM name="BasicEncryptionModes" val="0"/>
+                <DM name="LocalSetEnable" val="0"/>
+                <DM name="EnableCalledID" val="1"/>
+                <DM name="EnableUserID" val="1"/>
+                <DM name="RadiusAccountEnable" val="0"/>
+                <DM name="SSID_IDX" val="0"/>
+                <DM name="InstISPExist" val="0"/>
+                <DM name="DownTagStripEnable" val="1"/>
+                <DM name="UpTagEnable" val="0"/>
+                <DM name="Vlan" val="0"/>
+                <DM name="VlanPriority" val="0"/>
+                <DM name="SimCardFileId" val="45"/>
+        </Row>
+        <Row No="3">
+                <DM name="ViewName" val="IGD.LD1.WLAN4"/>
+                <DM name="LANDViewName" val="IGD.LD1"/>
+                <DM name="ValidIf" val="1"/>
+                <DM name="InstExist" val="1"/>
+                <DM name="Enable" val="0"/>
+                <DM name="ESSID" val="SSID4"/>
+                <DM name="ESSIDPrefix" val=""/>
+                <DM name="Priority" val="0"/>
+                <DM name="ACLPolicy" val="0"/>
+                <DM name="BeaconType" val="6"/>
+                <DM name="MACAddressControlEnabled" val="0"/>
+                <DM name="ESSIDHideEnable" val="0"/>
+                <DM name="BeaconEnabled" val="1"/>
+                <DM name="WEPAuthMode" val="2"/>
+                <DM name="WEPLevel" val="1"/>
+                <DM name="WEPKeyIndex" val="1"/>
+                <DM name="WPAEncryptType" val="2"/>
+                <DM name="WPAAuthMode" val="0"/>
+                <DM name="11iEncryptType" val="2"/>
+                <DM name="11iAuthMode" val="0"/>
+                <DM name="WPAGroupRekey" val="0"/>
+                <DM name="WPAEAPServerIp" val="192.168.1.1"/>
+                <DM name="WPAEAPSecret" val="12345678"/>
+                <DM name="MaxUserNum" val="16"/>
+                <DM name="VapIsolationEnable" val="0"/>
+                <DM name="BasicEncryptionModes" val="0"/>
+                <DM name="LocalSetEnable" val="0"/>
+                <DM name="EnableCalledID" val="1"/>
+                <DM name="EnableUserID" val="1"/>
+                <DM name="RadiusAccountEnable" val="0"/>
+                <DM name="SSID_IDX" val="0"/>
+                <DM name="InstISPExist" val="0"/>
+                <DM name="DownTagStripEnable" val="1"/>
+                <DM name="UpTagEnable" val="0"/>
+                <DM name="Vlan" val="0"/>
+                <DM name="VlanPriority" val="0"/>
+                <DM name="SimCardFileId" val="46"/>
+        </Row>
+        <Row No="4">
+                <DM name="ViewName" val="IGD.LD1.WLAN5"/>
+                <DM name="LANDViewName" val="IGD.LD1"/>
+                <DM name="ValidIf" val="1"/>
+                <DM name="InstExist" val="1"/>
+                <DM name="Enable" val="1"/>
+                <DM name="ESSID" val="CMCC-Ke5w-5G"/>
+                <DM name="ESSIDPrefix" val=""/>
+                <DM name="Priority" val="0"/>
+                <DM name="ACLPolicy" val="2"/>
+                <DM name="BeaconType" val="6"/>
+                <DM name="MACAddressControlEnabled" val="0"/>
+                <DM name="ESSIDHideEnable" val="0"/>
+                <DM name="BeaconEnabled" val="1"/>
+                <DM name="WEPAuthMode" val="2"/>
+                <DM name="WEPLevel" val="1"/>
+                <DM name="WEPKeyIndex" val="1"/>
+                <DM name="WPAEncryptType" val="2"/>
+                <DM name="WPAAuthMode" val="0"/>
+                <DM name="11iEncryptType" val="2"/>
+                <DM name="11iAuthMode" val="0"/>
+                <DM name="WPAGroupRekey" val="0"/>
+                <DM name="WPAEAPServerIp" val="192.168.1.1"/>
+                <DM name="WPAEAPSecret" val="12345678"/>
+                <DM name="MaxUserNum" val="40"/>
+                <DM name="VapIsolationEnable" val="0"/>
+                <DM name="BasicEncryptionModes" val="0"/>
+                <DM name="LocalSetEnable" val="1"/>
+                <DM name="EnableCalledID" val="1"/>
+                <DM name="EnableUserID" val="1"/>
+                <DM name="RadiusAccountEnable" val="0"/>
+                <DM name="SSID_IDX" val="0"/>
+                <DM name="InstISPExist" val="0"/>
+                <DM name="DownTagStripEnable" val="1"/>
+                <DM name="UpTagEnable" val="0"/>
+                <DM name="Vlan" val="0"/>
+                <DM name="VlanPriority" val="0"/>
+                <DM name="SimCardFileId" val="47"/>
+        </Row>
+        <Row No="5">
+                <DM name="ViewName" val="IGD.LD1.WLAN6"/>
+                <DM name="LANDViewName" val="IGD.LD1"/>
+                <DM name="ValidIf" val="1"/>
+                <DM name="InstExist" val="1"/>
+                <DM name="Enable" val="0"/>
+                <DM name="ESSID" val="SSID6"/>
+                <DM name="ESSIDPrefix" val=""/>
+                <DM name="Priority" val="0"/>
+                <DM name="ACLPolicy" val="2"/>
+                <DM name="BeaconType" val="6"/>
+                <DM name="MACAddressControlEnabled" val="0"/>
+                <DM name="ESSIDHideEnable" val="0"/>
+                <DM name="BeaconEnabled" val="1"/>
+                <DM name="WEPAuthMode" val="2"/>
+                <DM name="WEPLevel" val="1"/>
+                <DM name="WEPKeyIndex" val="1"/>
+                <DM name="WPAEncryptType" val="2"/>
+                <DM name="WPAAuthMode" val="0"/>
+                <DM name="11iEncryptType" val="2"/>
+                <DM name="11iAuthMode" val="0"/>
+                <DM name="WPAGroupRekey" val="0"/>
+                <DM name="WPAEAPServerIp" val="192.168.1.1"/>
+                <DM name="WPAEAPSecret" val="12345678"/>
+                <DM name="MaxUserNum" val="40"/>
+                <DM name="VapIsolationEnable" val="0"/>
+                <DM name="BasicEncryptionModes" val="0"/>
+                <DM name="LocalSetEnable" val="0"/>
+                <DM name="EnableCalledID" val="1"/>
+                <DM name="EnableUserID" val="1"/>
+                <DM name="RadiusAccountEnable" val="0"/>
+                <DM name="SSID_IDX" val="0"/>
+                <DM name="InstISPExist" val="0"/>
+                <DM name="DownTagStripEnable" val="1"/>
+                <DM name="UpTagEnable" val="0"/>
+                <DM name="Vlan" val="0"/>
+                <DM name="VlanPriority" val="0"/>
+                <DM name="SimCardFileId" val="48"/>
+        </Row>
+        <Row No="6">
+                <DM name="ViewName" val="IGD.LD1.WLAN7"/>
+                <DM name="LANDViewName" val="IGD.LD1"/>
+                <DM name="ValidIf" val="1"/>
+                <DM name="InstExist" val="1"/>
+                <DM name="Enable" val="0"/>
+                <DM name="ESSID" val="SSID7"/>
+                <DM name="ESSIDPrefix" val=""/>
+                <DM name="Priority" val="0"/>
+                <DM name="ACLPolicy" val="2"/>
+                <DM name="BeaconType" val="6"/>
+                <DM name="MACAddressControlEnabled" val="0"/>
+                <DM name="ESSIDHideEnable" val="0"/>
+                <DM name="BeaconEnabled" val="1"/>
+                <DM name="WEPAuthMode" val="2"/>
+                <DM name="WEPLevel" val="1"/>
+                <DM name="WEPKeyIndex" val="1"/>
+                <DM name="WPAEncryptType" val="2"/>
+                <DM name="WPAAuthMode" val="0"/>
+                <DM name="11iEncryptType" val="2"/>
+                <DM name="11iAuthMode" val="0"/>
+                <DM name="WPAGroupRekey" val="0"/>
+                <DM name="WPAEAPServerIp" val="192.168.1.1"/>
+                <DM name="WPAEAPSecret" val="12345678"/>
+                <DM name="MaxUserNum" val="40"/>
+                <DM name="VapIsolationEnable" val="0"/>
+                <DM name="BasicEncryptionModes" val="0"/>
+                <DM name="LocalSetEnable" val="0"/>
+                <DM name="EnableCalledID" val="1"/>
+                <DM name="EnableUserID" val="1"/>
+                <DM name="RadiusAccountEnable" val="0"/>
+                <DM name="SSID_IDX" val="0"/>
+                <DM name="InstISPExist" val="0"/>
+                <DM name="DownTagStripEnable" val="1"/>
+                <DM name="UpTagEnable" val="0"/>
+                <DM name="Vlan" val="0"/>
+                <DM name="VlanPriority" val="0"/>
+                <DM name="SimCardFileId" val="49"/>
+        </Row>
+        <Row No="7">
+                <DM name="ViewName" val="IGD.LD1.WLAN8"/>
+                <DM name="LANDViewName" val="IGD.LD1"/>
+                <DM name="ValidIf" val="1"/>
+                <DM name="InstExist" val="1"/>
+                <DM name="Enable" val="0"/>
+                <DM name="ESSID" val="SSID8"/>
+                <DM name="ESSIDPrefix" val=""/>
+                <DM name="Priority" val="0"/>
+                <DM name="ACLPolicy" val="2"/>
+                <DM name="BeaconType" val="6"/>
+                <DM name="MACAddressControlEnabled" val="0"/>
+                <DM name="ESSIDHideEnable" val="0"/>
+                <DM name="BeaconEnabled" val="1"/>
+                <DM name="WEPAuthMode" val="2"/>
+                <DM name="WEPLevel" val="1"/>
+                <DM name="WEPKeyIndex" val="1"/>
+                <DM name="WPAEncryptType" val="2"/>
+                <DM name="WPAAuthMode" val="0"/>
+                <DM name="11iEncryptType" val="2"/>
+                <DM name="11iAuthMode" val="0"/>
+                <DM name="WPAGroupRekey" val="0"/>
+                <DM name="WPAEAPServerIp" val="192.168.1.1"/>
+                <DM name="WPAEAPSecret" val="12345678"/>
+                <DM name="MaxUserNum" val="40"/>
+                <DM name="VapIsolationEnable" val="0"/>
+                <DM name="BasicEncryptionModes" val="0"/>
+                <DM name="LocalSetEnable" val="0"/>
+                <DM name="EnableCalledID" val="1"/>
+                <DM name="EnableUserID" val="1"/>
+                <DM name="RadiusAccountEnable" val="0"/>
+                <DM name="SSID_IDX" val="0"/>
+                <DM name="InstISPExist" val="0"/>
+                <DM name="DownTagStripEnable" val="1"/>
+                <DM name="UpTagEnable" val="0"/>
+                <DM name="Vlan" val="0"/>
+                <DM name="VlanPriority" val="0"/>
+                <DM name="SimCardFileId" val="50"/>
+        </Row>
+</Tbl>
+/bin/autorun.sh: line 8: sendcmd: not found
+11930:23:20 [OSS_cspd][Warn] [oss_sche.c(849)RunProcess] RunProcess process[firewall] Event[0x1103] dwUsedTicks[424]
+[FWPM]pm_fw_list_pm ret = 1
+[FWIP]pm_fwlist_ip ret = 1
+[FWSC]pm_fw_list_sc ret = 1
+11930:23:20 [OSS_cspd][Warn] [oss_comm.c(2276)SocketAsynSendM] sender = 0x000101a6 ,reciver = 0x00030201 , Event = 0x2311
+11930:23:20 [OSS_cspd][Warn] [oss_comm.c(2278)SocketAsynSendM] send ilen = -1 Len = 44  errno=[2:No such file or directory]
+11930:23:20 [OSS_cspd][Error] [oss_common.c(547)ASEND] [arp_detect_mgr][000101A6] Send task Message[0X2311] to [00030201] in SocketAsynSendMsg()  ERROR !
+11930:23:20 [OSS_cspd][Warn] [oss_comm.c(2276)SocketAsynSendM] sender = 0x000101a6 ,reciver = 0x00020901 , Event = 0x4009
+11930:23:20 [OSS_cspd][Warn] [oss_comm.c(2278)SocketAsynSendM] send ilen = -1 Len = 40  errno=[2:No such file or directory]vendor name = ZTE_B+_G
+11930:23:20 [OSS_cspd][Error] [oss_common.c(547)ASE
+ optical PN(0x60) =
+ND] [arp_detect_ optical PN(0x28) = GN25L95
+mgr][000101A6] Send task Message[0X4009] to [00020901] in SocketAsynSendMsg()  ERROR !
+11930:23:20 [arp_detect_mgr][Error] [e8_arp_detect_m(641)si_arp_detect_t] Register IFS/VOIP/TR069 error,re register 30 sec later!
+Sub_SNOntStaticDB:Don't create meclass:240!
+Sub_SNOntStaticDB:Don't create meclass:242!
+Sub_SNOntStaticDB:Don't create meclass:247!
+Sub_SNOntStaticDB:Don't create meclass:253!
+Sub_SNOntStaticDB:Don't create meclass:251!
+Sub_SNOntStaticDB:Don't create meclass:252!
+Sub_SNOntStaticDB:Don't create meclass:65294!
+Sub_SNOntStaticDB:Don't create meclass:65295!
+Sub_SNOntStaticDB:Don't create meclass:65304!
+Sub_SNOntStaticDB:Don't create meclass:65300!
+Sub_SNOntStaticDB:Don't create meclass:350!
+Sub_SNOntStaticDB:Don't create meclass:65306!
+sh: can't create /proc/userlmt_ip: nonexistent directory
+11930:23:20 [omci][Error] [pon_upgrade_pma(204)pm_get_private_] pm_get_private_profile_int: GetPrivateProfileInt FAILURE!
+Call pm_get_private_profile_int error,iRet=-14,KeyName=IsOmciUpgrading
+[zxic_omci_mng_event_callback]Call pFucMngExec ucRet=1
+[zxic_omci_mng_event_config] Event (0x05010001) no found!
+power status is 0x0!!!
+[zxic_omci_mng_event_config] Event (0x05000004) no found!
+[zxic_omci_mng_event_config] Event (0x05000039) no found!
+[zxic_omci_mng_event_config] Event (0x05000039) no found!
+[zxic_omci_mng_event_callback]Call pFucMngExec ucRet=2
+[zxic_omci_mng_event_config] Event (0x05000039) no found!
+[zxic_omci_mng_event_config] Event (0x05000039) no found!
+[zxic_omci_mng_event_callback]Call pFucMngExec ucRet=2
+[zxic_omci_mng_event_config] Event (0x05000039) no found!
+[zxic_omci_mng_event_config] Event (0x05000039) no found!
+[zxic_omci_mng_event_callback]Call pFucMngExec ucRet=2
+[zxic_omci_mng_event_config] Event (0x05000039) no found!
+[zxic_omci_mng_event_config] Event (0x05000039) no found!
+[zxic_omci_mng_event_callback]Call pFucMngExec ucRet=2
+##Get the handle of ont remote debug DB failed!##
+[LHP]Update loid_authencation state op_result 0 G_ONU_REG_Authenstates 0
+[zxic_omci_mng_event_config] Event (0x0000000a) no found!
+11930:23:20 [qos_mgr][Warn] [qos_mgr.c(8486)si_qq_config]
+
+==463===si_ipv4_res_init_load_cfg===tEnable=0=====
+pm_ipv4resurl_set_all_route_enable  parameter in: Enable:0
+11930:23:20 [dhcps][Error] [work_main.h(178)WORK_ASYNC_MSG_]
+ ERROR, PID [dhcps] ,async event [0x9c20] map fun is unknow
+11930:23:20 [dns_mgr][Error] [dns_mgr.c(500)si_dns_write_dn] ############test si_dns_write_dns_contrl_frm_db
+11930:23:20 [dns_mgr][Error] [dns_mgr.c(503)si_dns_write_dn] enter si_dns_write_dns_contrl_frm_db!
+11930:23:20 [dns_mgr][Error] [dns_mgr.c(515)si_dns_write_dn] test,domain:NULL
+tWlanList.dwCount = 0
+[zxic_omci_mng_event_callback]Call pFucMngExec ucRet=1
+tWlanList.dwCount = 0
+[zxic_omci_mng_event_callback]Call pFucMngExec ucRet=1
+tWlanList.dwCount = 0
+[zxic_omci_mng_event_callback]Call pFucMngExec ucRet=1
+tWlanList.dwCount = 0
+[zxic_omci_mng_event_callback]Call pFucMngExec ucRet=1
+tWlanList.dwCount = 0
+[zxic_omci_mng_event_callback]Call pFucMngExec ucRet=1
+tWlanList.dwCount = 0
+[zxic_omci_mng_event_callback]Call pFucMngExec ucRet=1
+tWlanList.dwCount = 0
+[zxic_omci_mng_event_callback]Call pFucMngExec ucRet=1
+tWlanList.dwCount = 0
+[zxic_omci_mng_event_callback]Call pFucMngExec ucRet=1
+[zxic_omci_mng_event_config] Event (0x03000012) no found!
+[zxic_omci_mng_event_callback]Call pFucMngExec ucRet=2
+11930:23:20 [OSS_gpon_omci][Warn] [oss_sche.c(849)RunProcess] RunProcess process[omci] Event[0x3e81] dwUsedTicks[767]
+
+ [206  main]
+11930:23:20 [dss_mgr][Warn] [dss_lla.c(946)si_dss_lla_main] The Dss' lpMsg is null.
+11930:23:20 [igmpproxy_mgr][Error] [igmp_proxy_mgr.(977)si_igmp_proxy_g] down stream IFcount Is 1
+11930:23:20 [switch_mgr][Error] [pon_switch_mgr.(90)si_switch_main] Set Timer 35s
+11930:23:20 [U_igmp_proxy][Error] [igmp_proxy.c(1600)main] ptr_upstream_ifaceName unspecified
+11930:23:20 [cspd_misc][Warn] [dhcp4c_inst.c(3627)_dhcp4cRegSendO] Send code[60]fun[0x196d3c] is replaced by fun[0x67c60]
+
+warning! gpio event 0xa40c (keyid=0x10101  keystatus=1) has no data
+
+warning! gpio event 0xa409 (keyid=0x10101  keystatus=5) has no data
+
+warning! gpio event 0xa40f (keyid=0x10101  keystatus=2) has no data
+Start, trace_flags=00000000 (debug enabled)
+OpenL2TP V1.8, (c) Copyright 2004-2010 Katalix Systems Ltd.
+Loading plugin /lib/ppp_unix.so, version V1.5
+voip main binding cpu_mask 0x2....
+ctSgw_SocketCreate:pid=1275,pname=osgid, path=/var/tmp/0X000004FBplugin
+libctsgw begin! pid=1275
+ctSgw_SocketCreate:pid=1271,pname=httpd, path=/var/tmp/0X000004F7plugin
+libctsgw begin! pid=1271
+VendorId=38c,ChipModel=9
+ [672  set_portlocate_enable]  g_dhcp_PortLocate=1
+128,Revision = 28,IcVersion = f0624,ChipMode = 0
+11930:23:21 [flowrl_mgr][Error] [e8_flowrl_mgr.c(1656)si_flowrl_mgr_s]  gBversion=[0],gLan_up=[-1],gLan_up_port=[-1]
+11930:23:21 [portlocate_mgr][Error] [portLocate_mgr.(172)si_wifi_share_h] tWANCList.dwCount != 1
+11930:23:21 [portlocate_mgr][Warn] [portLocate_mgr.(79)si_wifi_share_c] Enable=1  WanEnable=0  WlanEnable=0  strlen(Account)=0
+11930:23:21 [portlocate_mgr][Warn] [dbl_api.c(630)zxicDbLstView] dbAPILstView VID(352) RVN(IGD) Err(-25)
+11930:23:21 [portlocate_mgr][Error] [portLocate_mgr.(340)portlocate_mgr_] List ethLanMatch  fail  failed-25
+[si_lan_eth_filter_start 88] start.
+
+ [3119  si_rt_if_add]Ipmode = 3 vConnectionID = IGD.LD1 add
+11930:23:21 [route_mgr][Error] [route_mgr.c(2223)si_db_init_defg] si_db_qry_default_rt: no default RT
+11930:23:21 [route_mgr][Warn] [route6_mgr.c(228)si_db_v6_init_d] si_db_qry_default_rt6: no default RT
+11930:23:21 [route_mgr][Warn] [dbl_api.c(406)zxicDbGetView] dbAPIGetView VID(17) VN(IGD.LD1) Err(-5)
+11930:23:21 [dhcp6s][Error] [work_main.h(178)WORK_ASYNC_MSG_]
+ ERROR, PID [dhcp6s] ,async event [0x9615] map fun is unknow
+11930:23:21 [RAServer_Mgr][Error] [work_main.h(178)WORK_ASYNC_MSG_]
+ ERROR, PID [RAServer_Mgr] ,async event [0x9615] map fun is unknow
+
+ [3359  si_rt_if_up]Ipmode = 1 vConnectionID = IGD.LD1 up
+sh: /etc/rdpa_gpon_init_m.sh: not found
+11930:23:21 [plugin_process][Error] [plugin_process.(1774)plugin_process_] EV_NORMAL_START
+11930:23:21 [rm_mgr][Warn] [phoneapp_plugm_(2082)get_ip_host_ipv] tRouteInfo mod=1. (1:E_IPV4,2:E_IPV6,3:E_BOTH),tRouteInfo.WANCType<0>;szInstIdentity=IGD.WD1.WCD1.WCPPP1
+11930:23:21 [rm_mgr][Error] [rm_mgr.c(1108)rm_Init] cannot get WAN IP! in rm_Init,ipmode=1
+killall: cpulimit: no process killed
+11930:23:21 [explugin_proces][Error] [explugin_proces(167)exPluginProcess] Input is NULL!
+11930:23:21 [simulation_mgr][Warn] [dbl_api.c(406)zxicDbGetView] dbAPIGetView VID(293) VN(IGD) Err(-5)
+11930:23:21 [simulation_mgr][Error] [simulation_mgr.(4443)initAutoSimulat] initAutoSimulatConf fail for fail get conf from db AutoEmulatConf!
+11930:23:21 [simulation_mgr][Warn] [simulation_mgr.(480)simulationStart] GetValueFromFile failed:/userconfig/flag_type
+11930:23:21 [simulation_mgr][Warn] [simulation_mgr.(482)simulationStart] ##########flag_type:0##########
+11930:23:21 [simulation_mgr][Warn] [simulation_mgr.(486)simulationStart] init tPingTimeOut&&tPingTimes
+11930:23:21 [BCC][Warn] [bcc_entry.c(226)BCC_TaskEntry] Unknown Event=0x00001100 when BCC PowerOn!
+VOP_DSP2RtraceTaskEntry entered:POWER ON!!!wState:0
+VOP_DspTraceTaskEntery entered:POWER ON!!!wState:0
+VOP_TaskEntry entered:POWER ON!!!wState:0
+11930:23:21 [osgid][Warn] [osgid_comm.c(1750)cache_clean] Clean  bundle temp files!
+11930:23:21 [ctsgw_wlan_set][Warn] [ctsgw_proxy_mai(392)ctsgw_wlan_set_] ###wEvent:4355
+11930:23:21 [ctsgw_wlan_set][Warn] [ctsgw_proxy_mai(407)ctsgw_wlan_set_] ------------------wangjuan now in ctsgw_wlan_set_ASynMsg-------------------
+11930:23:21 [ctsgw_wlan_set][Error] [ctsgw_proxy_mai(411)ctsgw_wlan_set_] lpMsg is NULL
+11930:23:21 [telnetd][Error] [td.c(530)TelnetdActionWi] do action with cfg:enable=1,port=23,maxcon=2,usr=root,pwd=Zte521,ProcType=0
+11930:23:21 [telnetd][Error] [td.c(595)TelnetdActionWi] telnetd should be Run
+11930:23:21 [osgid][Warn] [osgid_comm.c(1996)StartOSGiFremaw] StartOSGiFremawork,CONFIG_FORCE_REINSTALL_PLUGIN
+11930:23:21 [osgid][Warn] [osgid_comm.c(2116)CheckUnfinished] CheckUnfinishedPreinstall,need force reinstall plugin
+11930:23:21 [osgid][Warn] [osgid_comm.c(2018)StartOSGiFremaw] StartOSGiFremawork,1st check kill_java_no_restart_flag:0
+11930:23:21 [webd][Warn] [my_dmenu.c(944)si_webd_add_men] no menu item with idName:smPrefixMgr
+11930:23:21 [webd][Warn] [my_dmenu.c(944)si_webd_add_men] no menu item with idName:smUSBStor
+11930:23:21 [webd][Warn] [my_dmenu.c(944)si_webd_add_men] no menu item with idName:smUSBStor
+11930:23:21 [webd][Warn] [my_dmenu.c(944)si_webd_add_men] no menu item with idName:smUSBStor
+11930:23:21 [webd][Warn] [my_dmenu.c(944)si_webd_add_men] no menu item with idName:smUSBStor
+11930:23:21 [webd][Warn] [my_dmenu.c(944)si_webd_add_men] no menu item with idName:smDms
+11930:23:21 [webd][Warn] [my_dmenu.c(944)si_webd_add_men] no menu item with idName:smDNSSer
+11930:23:21 [webd][Warn] [my_dmenu.c(944)si_webd_add_men] no menu item with idName:smDNSSer
+11930:23:21 [Cannot get Index:[eth0]
+webd][Warn] [my_Create brport: [eth0]--[255]
+dmenu.c(944)si_wthe brport not config index yet
+ebd_add_men] no device eth0 entered promiscuous mode
+menu item with ibr0: port 1(eth0) entered forwarding state
+dName:smSamba
+ br0: port 1(eth0) entered forwarding state
+1379 root       IPv6: ADDRCONF(NETDEV_CHANGE): br0: link becomes ready
+0:00 sh -c ps aux | grep "java -"
+
+11930:23:21 [osgid][Warn] [osgid_comm.c(2168)CmCMCCOSGICheck] CmCMCCOSGICheckJavaExist,FALSE
+11930:23:21 [osgid][Warn] [osgid_comm.c(2056)StartOSGiFremaw] StartOSGiFremawork,fork!
+11930:23:21 [osgid][Warn] [osgid_comm.c(2103)StartOSGiFremaw] osgi_enable is disalbed, start failed!!!!!
+libctsgw end! pid=1383, socket (/var/tmp/0X000004FBplugin)
+11930:23:21 [route_mgr][Warn] [dbl_api.c(406)zxicDbGetView] dbAPIGetView VID(17) VN(IGD.LD1) Err(-5)
+11930:23:21 [dhcp6s][Error] [work_main.h(178)WORK_ASYNC_MSG_]
+ ERROR, PID [dhcp6s] ,async event [0x9615] map fun is unknow
+11930:23:21 [RAServer_Mgr][Error] [work_main.h(178)WORK_ASYNC_MSG_]
+ ERROR, PID [RAServer_Mgr] ,async event [0x9615] map fun is unknow
+===dbs want reg wport<0> forbide===
+iptables: Bad rule (does a matching rule exist in that chain?).
+11930:23:22 [webd][Warn] [thttpd.c(3091)webdProcNasDevS] ExStorage_Stat_T state=1
+11930:23:22 [tr64][Error] [tr64_actStaticI(68)si_tr069_tr64_r] TCannot get Index:[eth1]
+R64:Read config Create brport: [eth1]--[255]
+file g_error !
+the brport not config index yet
+11930:23:22 [trdevice eth1 entered promiscuous mode
+069][Warn] [tr06br0: port 2(eth1) entered forwarding state
+9_main.c(447)si_br0: port 2(eth1) entered forwarding state
+tr069_init] 0045002225 tr069FileTemp=/etc/device.xml
+11930:23:22 [tr069][Warn] [rpc_methods.c(256)si_tr069_rpc_in] Reboot Success send EV_TR069_ALARM_EVENT !!!
+11930:23:22 [tr069][Warn] [tr069_main.c(494)si_tr069_init] VOIP Control init by TR069
+11930:23:22 [tr069][Warn] [dbl_api.c(406)zxicDbGetView] dbAPIGetView VID(17) VN(IGD.WD1.WCD1.WCIP1) Err(-5)
+iptables: Bad rule (does a matching rule exist in that chain?).
+Cannot get Index:[eth2]
+Create brport: [eth2]--[255]
+the brport not config index yet
+device eth2 entered promiscuous mode
+br0: port 3(eth2) entered forwarding state
+br0: port 3(eth2) entered forwarding state
+account_policy_get: tdb_fetch_uint32 failed for field 1 (min password length), returning 0
+account_policy_get: tdb_fetch_uint32 failed for field 2 (password history), returning 0
+account_policy_get: tdb_fetch_uint32 failed for field 3 (user must logon to change password), returning 0
+account_policy_get: tdb_fetch_uint32 failed for field 4 (maximum password age), returning 0
+account_policy_get: tdb_fetch_uint32 failed for field 5 (minimum password age), returning 0
+account_policy_get: tdb_fetch_uint32 failed for field 6 (lockout duration), returning 0
+account_policy_get: tdb_fetch_uint32 failed for field 7 (reset count minutes), returning 0
+account_policy_get: tdb_fetch_uint32 failed for field 8 (bad lockout attempt), returning 0
+account_policy_get: tdb_fetch_uint32 failed for field 9 (disconnect time), returning 0
+account_policy_get: tdb_fetch_uint32 failed for field 10 (refuse machCannot get Index:[eth3]
+ine password chaCreate brport: [eth3]--[255]
+nge), returning the brport not config index yet
+0
+Added user usdevice eth3 entered promiscuous mode
+er.
+br0: port 4(eth3) entered forwarding state
+br0: port 4(eth3) entered forwarding state
+##O7 STATE 0##!
+
+ [3119  si_rt_if_add]Ipmode = 1 vConnectionID = IGD.WD1.WCD1.WCPPP1 add
+11930:23:22 [route_mgr][Error] [route_mgr.c(2223)si_db_init_defg] si_db_qry_default_rt: no default RT
+11930:23:22 [route_mgr][Warn] [route6_mgr.c(228)si_db_v6_init_d] si_db_qry_default_rt6: no default RT
+11930:23:22 [dss_mgr][Error] [work_main.h(205)WORK_ASYNC_TIME]
+ ERROR, PID [dss_mgr] ,async event [0x1154] map fun is NULL
+11930:23:22 [dss_mgr][Error] [dss_main.c(473)si_dss_main_dis] err subId is(6)
+11930:23:22 [optical_mgr][Error] [pon_optical_mgr(272)si_optical_proc]  ASynMsg: msg id = 0xe701
+11930:23:22 [ifs_mgr][Warn] [ifs_notifier.c(380)si_ifs_regnotif] not found, pid[65810]
+11930:23:22 [ifs_mgr][Warn] [ifs_notifier.c(380)si_ifs_regnotif] not found, pid[65850]
+11930:23:22 [ifs_mgr][Warn] [ifs_notifier.c(380)si_ifs_regnotif] not found, pid[65850]
+11930:23:22 [dns_mgr][Error] [work_main.h(178)WORK_ASYNC_MSG_]
+ ERROR, PID [dns_mgr] ,async event [0x9615] map fun is unknow
+11930:23:22 [U_igmp_proxy][Error] [igmp_proxy.c(1600)main] ptr_upstream_ifaceN[br_update_ip] br_ip: 0x0101a8c0
+ame unspecified
+11930:23:22 [detail_process][Error] [work_main.h(178)WORK_ASYNC_MSG_]
+ ERROR, PID [detail_process] ,async event [0x9615] map fun is unknow
+11930:23:22 [dns_mgr][Error] [work_main.h(178)WORK_ASYNC_MSG_]
+ ERROR, PID [dns_mgr] ,async event [0x9615] map fun is unknow
+iptables: Bad rule (does a matching rule exist in that chain?).
+11930:23:22 [detail_process][Error] [work_main.h(178)WORK_ASYNC_MSG_]
+ ERROR, PID [detail_process] ,async event [0x9615] map fun is unknow
+11930:23:22 [loopback_mgr][Error] [work_main.h(178)WORK_ASYNC_MSG_]
+ ERROR, PID [loopback_mgr] ,async event [0x9615] map fun is unknow
+iptables: Bad rule (does####Config existed br_port[eth0]'s index[0]
+ a matching rule
+ ####0,ffffffff
+ exist in that chain?).
+brctl: invalid argument 'databind' to 'brctl'
+11930:23:22 [loopback_mgr][Error] [work_main.h(178)WORK_ASYNC_MSG_]
+ ERROR, PID [loopback_mgr] ,async event [0x9615] map fun is unknow
+11930:23:22 [loopback_mgr][Error] [work_main.h(178)WORK_ASYNC_MSG_]
+ ERROR, PID [loopback_mgr] ,async event [0x9615] map fun is unknow
+iptables: Bad rule (does a matching rule exist in that chain?).
+####Config existed br_port[eth1]'s index[1]
+
+ ####0,ffffffff
+
+ ####1,ffffffff
+11930:23:22 [loopback_mgr][Error] [work_main.h(178)WORK_ASYNC_MSG_]
+ ERROR, PID [loopback_mgr] ,async event [0x9615] map fun is unknow
+11930:23:22 [loopback_mgr][Error] [work_main.h(178)WORK_ASYNC_MSG_]
+ ERROR, PID [loopback_mgr] ,async event [0x9615] map fun is unknow
+iptables: Bad rule (does a matching rule exist in that chain?).
+####Config existed br_port[eth2]'s index[2]
+
+ ####0,ffffffff
+
+ ####1,ffffffff
+
+ ####2,ffffffff
+11930:23:22 [loopback_mgr][Error] [work_main.h(178)WORK_ASYNC_MSG_]
+ ERROR, PID [loopback_mgr] ,async event [0x9615] map fun is unknow
+iptables: Bad rule (does a matching rule exist in that chain?).
+11930:23:22 [loopback_mgr][Error] [work_main.h(178)WORK_ASYNC_MSG_]
+ ERROR, PID [loopback_mgr] ,async event [0x9615] map fun is unknow
+####Config existed br_port[eth3]'s index[3]
+
+ ####0,ffffffff
+
+ ####1,ffffffff
+
+ ####2,ffffffff
+
+ ####3,ffffffff
+iptables: Bad rule (does a matching rule exist in that chain?).
+11930:23:23 [loopback_mgr][Error] [work_main.h(178)WORK_ASYNC_MSG_]
+ ERROR, PID [loopback_mgr] ,async event [0x9615] map fun is unknow
+11930:23:23 [loopback_mgr][Error] [work_main.h(178)WORK_ASYNC_MSG_]
+ ERROR, PID [loopback_mgr] ,async event [0x9615] map fun is unknow
+AsicSetPreTbtt(): bss_idx=0, PreTBTT timeout = 0x0
+RTMPSetPiggyBack(894): Not support for HIF_MT yet!
+11930:23:23 [loo
+ ####0,ffffffff
+pback_mgr][Error
+ ####1,ffffffff
+] [work_main.h(1
+ ####2,ffffffff
+78)WORK_ASYNC_MS
+ ####3,ffffffff
+G_]
+ ERROR, PI
+ ####4,ffffffff
+D [loopback_mgr] ,async AsicSetRalinkBurstMode(4182): Not support for HIF_MT yet!
+event [0x9615] mRTMPSetPiggyBack(894): Not support for HIF_MT yet!
+ap fun is unknow
+
+ ####0,ffffffff
+
+ ####1,ffffffff
+
+ ####2,ffffffff
+
+ ####3,ffffffff
+
+ ####4,ffffffff
+
+ ####5,ffffffff
+11930:23:23 [loopback_mgr][Error] [work_main.h(178)WORK_ASYNC_MSG_]
+ ERROR, PID [loopback_mgr] ,async AsicSetTxPreamble(4169): Not support for HIF_MT yet!
+event [0x9615] map fun is unknowAsicAddSharedKeyEntry(2009): Not support for HIF_MT yet!
+
+The 4-BSSID mode is enabled, the BSSID byte5 MUST be the multiple of 4
+AsicSetPreTbtt(): bss_idx=0, PreTBTT timeout = 0xa0
+11930:23:23 [loo
+ ####0,ffffffff
+pback_mgr][Error
+ ####1,ffffffff
+] [work_main.h(1
+ ####2,ffffffff
+78)WORK_ASYNC_MS
+ ####3,ffffffff
+G_]
+ ERROR, PI
+ ####4,ffffffff
+D [loopback_mgr]
+ ####5,ffffffff
+ ,async event [0
+ ####6,ffffffff
+x9615] map fun iMain bssid = b0:30:55:a1:13:fe
+s unknow
+
+ ####0,ffffffff
+
+ ####1,ffffffff
+
+ ####2,ffffffff
+
+ ####3,ffffffff
+
+ ####4,ffffffff
+
+ ####5,ffffffff
+
+ ####6,ffffffff
+
+ ####7,ffffffff
+11930:23:23 [loopback_mgr][Error] [work_main.h(178)WORK_ASYNC_MSG_]
+ ERROR, PID [loopback_mgr] ,async event [0x9615] map fun is unknow
+
+ ####0,ffffffff
+
+ ####1,ffffffff
+
+ ####2,ffffffff
+
+ ####3,ffffffff
+
+ ####4,ffffffff
+
+ ####5,ffffffff
+
+ ####6,ffffffff
+
+ ####7,ffffffff
+
+ ####8,ffffffff
+11930:23:23 [loopback_mgr][Error] [work_main.h(178)WORK_ASYNC_MSG_]
+ ERROR, PID [loopback_mgr] ,async event [0x9615] map fun is unknow
+
+ ####0,ffffffff
+
+ ####1,ffffffff
+
+ ####2,ffffffff
+
+ ####3,ffffffff
+
+ ####4,ffffffff
+
+ ####5,ffffffff
+
+ ####6,ffffffff
+
+ ####7,ffffffff
+
+ ####8,ffffffff
+
+ ####9,ffffffff
+11930:23:23 [loopback_mgr][Error] [work_main.h(178)WORK_ASYNC_MSG_]
+ ERROR, PID [loopback_mgr] ,async event [0x9615] map fun is unknow
+
+ ####0,ffffffff
+
+ ####1,ffffffff
+
+ ####2,ffffffff
+
+ ####3,ffffffff
+
+ ####4,ffffffff
+
+ ####5,ffffffff
+
+ ####6,ffffffff
+
+ ####7,ffffffff
+
+ ####8,ffffffff
+
+ ####9,ffffffff
+
+ ####10,ffffffff
+11930:23:23 [loopback_mgr][Error] [work_main.h(178)WORK_ASYNC_MSG_]
+ ERROR, PID [loopback_mgr] ,async event [0x9615] map fun is unknow
+
+ ####0,ffffffff
+
+ ####1,ffffffff
+
+ ####2,ffffffff
+
+ ####3,ffffffff
+
+ ####4,ffffffff
+
+ ####5,ffffffff
+
+ ####6,ffffffff
+
+ ####7,ffffffff
+
+ ####8,ffffffff
+
+ ####9,ffffffff
+
+ ####10,ffffffff
+
+ ####11,ffffffff
+11930:23:23 [rou
+ name=eth0,is_permit=0
+te_mgr][Warn] [d
+ name=eth1,is_permit=0
+bl_api.c(406)zxi
+ name=eth2,is_permit=0
+cDbGetView] dbAP
+ name=eth3,is_permit=0
+IGetView VID(17)
+ name=wlan0,is_permit=0
+ VN(IGD.LD1) Err
+ name=wlan1,is_permit=0
+(-5)
+
+ name=wlan2,is_permit=0
+
+ name=wlan3,is_permit=0
+
+ name=wlan4,is_permit=0
+
+ name=wlan5,is_permit=0
+
+ name=wlan6,is_permit=0
+
+ name=wlan7,is_permit=0
+
+ name=eth0,is_permit=0
+
+ name=eth1,is_permit=0
+
+ name=eth2,is_permit=0
+
+ name=eth3,is_permit=0
+
+ name=wlan0,is_permit=0
+
+ name=wlan1,is_permit=0
+
+ name=wlan2,is_permit=0
+
+ name=wlan3,is_permit=0
+
+ name=wlan4,is_permit=0
+
+ name=wlan5,is_permit=0
+
+ name=wlan6,is_permit=0
+
+ name=wlan7,is_permit=0
+================plib_DoW
+ name=eth0,is_permit=0
+anDHCPS_Forbid
+ name=eth1,is_permit=0
+type:1==========
+ name=eth2,is_permit=0
+========
+======
+ name=eth3,is_permit=0
+================
+ name=wlan0,is_permit=0
+LANC_ID is IGD.L
+ name=wlan1,is_permit=0
+D1.ETH1=========
+ name=wlan2,is_permit=0
+=
+=============
+ name=wlan3,is_permit=0
+=========WANC_ID
+ name=wlan4,is_permit=0
+ is IGD.WD1.WCD1
+ name=wlan5,is_permit=0
+.WCPPP1=========
+ name=wlan6,is_permit=0
+=
+ZXIC : is not
+ name=wlan7,is_permit=0
+ E_IF_APP_BRPORT
+======
+ name=eth0,is_permit=0
+==========plib_D
+ name=eth1,is_permit=0
+oWanDHCPS_Forbid
+ name=eth2,is_permit=0
+  type:1================
+ name=eth3,is_permit=0
+==
+
+ name=wlan0,is_permit=0
+
+ name=wlan1,is_permit=0
+
+ name=wlan2,is_permit=0
+
+ name=wlan3,is_permit=0
+
+ name=wlan4,is_permit=0
+
+ name=wlan5,is_permit=0
+
+ name=wlan6,is_permit=0
+
+ name=wlan7,is_permit=0
+================plib_DoW
+ name=eth0,is_permit=0
+anDHCPS_Forbid
+ name=eth1,is_permit=0
+type:1==========
+ name=eth2,is_permit=0
+========
+
+ name=eth3,is_permit=0
+
+ name=wlan0,is_permit=0
+
+ name=wlan1,is_permit=0
+
+ name=wlan2,is_permit=0
+
+ name=wlan3,is_permit=0
+
+ name=wlan4,is_permit=0
+
+ name=wlan5,is_permit=0
+
+ name=wlan6,is_permit=0
+
+ name=wlan7,is_permit=0
+================plib_DoWanDHCPS_Forbid  type:1==================
+11930:23:23 [qos_mgr][Warn] [dbl_api.c(406)zxicDbGetView] dbAPIGetView VID(17) VN(IGD.LD1) Err(-5)
+11930:23:23 [qos_mgr][Warn] [dbl_api.c(406)zxicDbGetView] dbAPIGetView VID(17) VN(IGD.LD1.ETH1) Err(-5)
+11930:23:23 [qos_mgr][Warn] [dbl_api.c(406)zxicDbGetView] dbAPIGetView VID(17) VN(IGD.LD1.ETH2) Err(-5)
+11930:23:23 [qos_mgr][Warn] [dbl_api.c(406)zxicDbGetView] dbAPIGetView VID(17) VN(IGD.LD1.ETH3) Err(-5)
+11930:23:23 [qos_mgr][Warn] [dbl_api.c(406)zxicDbGetView] dbAPIGetView VID(17) VN(IGD.LD1.ETH4) Err(-5)
+11930:23:23 [igmpproxy_mgr][Error] [e8_igmp_proxy_m(341)si_igmp_proxy_h] si_igmp_proxy_get_iptv_type_up_routeinfo error -1
+11930:23:23 [ifs_mgr][Warn] [ifs_notifier.c(380)si_ifs_regnotif] not found, pid[65810]
+11930:23:23 [ifs_mgr][Warn] [ifs_notifier.c(3[0]-[0]-[0]-[1]
+80)si_ifs_regnotbr_filter_conf:[1]-[10]
+if] not found, p####Config existed br_port[eth0]
+id[65810]
+11930:2[0]-[0]-[0]-[1]
+3:23 [U_igmp_probr_filter_conf:[1]-[10]
+xy][Error] [igmp####Config existed br_port[eth1]
+_proxy.c(1600)main] ptr_[0]-[0]-[0]-[1]
+upstream_ifaceNabr_filter_conf:[1]-[10]
+me unspecified
+####Config existed br_port[eth2]
+[0]-[0]-[0]-[1]
+br_filter_conf:[1]-[10]
+####Config existed br_port[eth3]
+11930:23:23 [igmpproxy_mgr][Error] [e8_igmp_proxy_m(341)si_igmp_proxy_h] si_igmp_proxy_get_iptv_type_up_routeinfo error -1
+11930:23:23 [igmpproxy_mgr][Error] [e8_igmp_proxy_m(341)si_igmp_proxy_h] si_igmp_proxy_get_iptv_type_up_routeinfo error -1
+11930:23:23 [igmpproxy_mgr][Error] [e8_igmp_proxy_m(341)si_igmp_proxy_h] si_igmp_proxy_get_iptv_type_up_routeinfo error -1
+11930:23:23 [igmpproxy_mgr][Error] [e8_igmp_proxy_m(341)si_igmp_proxy_h] si_igmp_proxy_get_iptv_type_up_routeinfo error -1
+11930:23:23 [igmpproxy_mgr][Error] [e8_igmp_proxy_m(341)si_igmp_proxy_h] si_igmp_proxy_get_iptv_type_up_routeinfo error -1
+11930:23:23 [U_igmp_proxy][Error] [igmp_proxy.c(1600)main] ptr_upstream_ifaceName unspecified
+
+ [206  main]
+11930:23:23 [U_dnsmasq][Error] [dnsmasq.c(260)main] bind interface socket failed
+rcm thread boundopen DSP_TRACE driver!
+ to cpu1
+-----VOP_TaskEntopen DSP_dev driver!
+ry entered:DSP START WORK!!!-------wStatUDP MOD START
+e:1
+[USLPUT0]Board default NO PTC
+[USLPUT0]Board default NO PTC
+[USLPUT0]Board default NO PTC
+[USLPUT0]Board default NO PTC
+[USLPUT0]SLC:User SLIC Driver V3.0.0 Init Finish.
+
+[USLPUT0]usrline_ioctl port:0 is disable now!
+[USLPUT3]port:0 Dc:0 U:48 A:20 Ring:2 VPK:70 100msEn:0, DisPowerSave:0 impe:2 ePTC:0 dwImpe:600 rxgain(D-A):-8, txgain(A-D):0, pcmlaw:1
+[USLPUT0]Find a port:0 with chan 0 cs 1
+[USLPUT0]cann't Find a port:1
+[USLPUT0]cann't Find a port:2
+[USLPUT0]cann't Find a port:3
+usrline_scan bind cpu:1.
+[USLPUT0]Init port  0
+[USLPUT0]Siliconlab chip Si3218x found! id:0xaa
+mac 3 phy status changed: 1000M full-duplex
+11930:23:24 [adev_mgr][Error] [access_dev_mgr.(2901)si_adev_update_] [si_adev_update_access_dev 2901] dwCount is 1
+11930:23:24 [osgid][Error] [osgid_comm.c(1364)OSGiDProcessSen] C Server send to Java failed!!!
+bomOpt:13
+Si3218x_Init_with_Options(880): size = 1 init_opt = 0
+Si3218x: Channel 0 : Type = PROSLIC
+Si3218x: : Channel 0 : Type = 40
+Si3218x: : Channel 0 : Rev  = 2
+ProSLIC:loading patch: 02172015
+AsicSetPreTbtt(): bss_idx=0, PreTBTT timeout = 0x0
+RTMPSetPiggyBack(894): Not support for HIF_MT yet!
+AsicSetRalinkBurstMode(4182): Not support for HIF_MT yet!
+RTMPSetPiggyBack(894): Not support for HIF_MT yet!
+AsicSetTxPreamble(4169): Not support for HIF_MT yet!
+AsicAddSharedKeyEntry(2009): Not support for HIF_MT yet!
+The 4-BSSID mode is enabled, the BSSID byte5 MUST be the multiple of 4
+AsicSetPreTbtt(): bss_idx=0, PreTBTT timeout = 0xa0
+Main bssid = b0:30:55:a1:13:fe
+11930:23:24 [wlan_config][Warn] [pon_wlan_adapte(4641)rlk_wlan_ioctl_] set wlan0 BndStrgEnable=0
+11930:23:24 [wlan_config][Warn] [pon_wlan_adapte(4641)rlk_wlan_ioctl_] set wlan0 BndStrgClearEntry=1
+11930:23:24 [wlan_config][Warn] [pon_wlan_adapte(4641)rlk_wlan_ioctl_] set wlan4 BndStrgEnable=0
+11930:23:24 [wlan_config][Warn] [pon_wlan_adapte(4641)rlk_wlan_ioctl_] set wlan4 BndStrgClearEntry=1
+11930:23:25 [OSS_cspd][Warn] [oss_comm.c(2276)SocketAsynSendM] sender = 0x00010000 ,reciver = 0x00850301 , Event = 0xa506
+11930:23:25 [OSS_cspd][Warn] [oss_comm.c(2278)SocketAsynSendM] send ilen = -1 Len = 56  errno=[2:No such file or directory]
+11930:23:25 [OSS_cspd][Error] [oss_common.c(547)ASEND] [][00010000] Send task Message[0XA506] to [00850301] in SocketAsynSendMsg()  ERROR !
+DB_RECORD_NOT_EXIST2
+[OA_manage_eth_link_alarm]GetMacBrPortMeIdFromUniMeId failed
+11930:23:25 [tr069][Warn] [e8_pdt_tr069_in(744)E8ComRecvTr069A] Receive EV_ETH_UP_LINK_STATUS▒▒port_rate=0; port_mode=1
+11930:23:25 [tr069][Warn] [e8_pdt_tr069_in(750)E8ComRecvTr069A] Ports/lan are not available alarmNumSi3218x: Channel 0 : VBAT Up = 58.849 v
+ber(id)=104006, status= 0.
+11930:23:25 [tr069][Error] [pdt_tr069_alarm(286)si_tr069_alarm_] Donnot receive normal Alarm or Repeat normal ClearAlarm:AlarmNumber= 104001,alarmNo=104006
+11930:23:25 [tr069][Error] [e8_pdt_tr069_in(2678)si_tr069_unconf] clearalarm:si_tr069_alarm_stat_insert fail!
+11930:23:25 [adev_mgr][Error] [access_dev_mgr.(2901)si_adev_update_] [si_adev_update_access_dev 2901] dwCount is 1
+11930:23:25 [adev_mgr][Error] [access_dev_mgr.(2901)si_adev_update_] [si_adev_update_access_dev 2901] dwCount is 1
+11930:23:25 [dss_mgr][Warn] [dss_main.c(941)si_dss_main_
+ name=eth0,is_permit=0
+dea] plib_ifs_ge
+ name=eth1,is_permit=0
+t_routeif_info[IGD.LD1]
+11930:23:25 [route_mgr][Warn] [dbl_api.c(406)zxicDbGetView] dbAPIGetView VID(1
+ name=eth2,is_permit=0
+7) VN(IGD.LD1) E
+ name=eth3,is_permit=0
+rr(-5)
+
+ name=wlan0,is_permit=0
+
+ name=wlan1,is_permit=0
+
+ name=wlan2,is_permit=0
+
+ name=wlan3,is_permit=0
+
+ name=wlan4,is_permit=0
+
+ name=wlan5,is_permit=0
+
+ name=wlan6,is_permit=0
+
+ name=wlan7,is_permit=0
+11930:23:25 [qos_mgr][Warn] [dbl_api.c(406)zxicDbGetView] dbAPIGetView VID(17) VN(IGD.LD1) Err(-5)
+11930:23:25 [adev_mgr][Error] [access_dev_mgr.(2901)si_adev_update_] [si_adev_update_access_dev 2901] dwCount is 1
+11930:23:25 [ct_
+old_dev_ioctl_369 : set BRCTL_SET_BR_GREGISTERTAG !
+userinfo_mgr][Warn] [e8_ctuserinfo_m(2884)si_ctuserinfo_m] Operat Dns Cheat
+11930:23:25 [ct_userinfo_mgr][Warn] [e8_ctuserinfo_m(2180)si_ctuserinfo_s] si_ctuserinfo_set_register_status2_br bEnable 0
+[USLPUT3]Register the port:0.
+11930:23:25 [OSS_cspd][Warn] [oss_sche.c(849)RunProcess] RunProcess process[wlan_config] Event[0xa205] dwUsedTicks[1001]
+Create brport: [wlan0]--[4]
+device wlan0 entered promiscuous mode
+br0: port 5(wlan0) entered forwarding state
+br0: port 5(wlan0) entered forwarding state
+brctl: invalid argument 'databind' to 'brctl'
+11930:23:26 [dhcps][Error] [options.c(202)GetBasicOpts] cmsCom_getDeviceInfoLocked_igd input Allen tDst.buf Allen
+11930:23:26 [dhcps][Warn] [e8_dhcps.c(301)e8DhcpsParseBas] Get Vendor Fail.
+11930:23:26 [dhcps][Warn] [e8_dhcps.c(313)e8D
+ name=eth0,is_permit=0
+hcpsParseBas] Ge
+ name=eth1,is_permit=0
+t Category Fail.
+11930
+ name=eth2,is_permit=0
+:23:26 [dhcps][W
+ name=eth3,is_permit=0
+arn] [e8_dhcps.c
+ name=wlan0,is_permit=0
+(325)e8DhcpsParseBas] Ge
+ name=wlan1,is_permit=0
+t Model Fail.
+
+ name=wlan2,is_permit=0
+11930:23:26 [dhcps][Warn
+ name=wlan3,is_permit=0
+] [e8_dhcps.c(338)e8Dhcp
+ name=wlan4,is_permit=0
+sParseBas] Get V
+ name=wlan5,is_permit=0
+ersion Fail.
+1
+ name=wlan6,is_permit=0
+1930:23:26 [dhcp
+ name=wlan7,is_permit=0
+s][Warn] [e8_dhcps.c(208)e8DhcpsGetDevTy] Default Dev Type: Computer
+================plib_DoWanDHCPS_Forbid  type:1==================
+======================LANC_ID is IGD.LD1.WLAN1==========
+======================WANC_ID is IGD.WD1.WCD1.WCPPP1==========
+ZXIC : is not E_IF_APP_BRPORT
+11930:23:26 [qos_mgr][Warn] [dbl_api.c(406)zxicDbGetView] dbAPIGetView VID(17) VN(IGD.LD1.WLAN1) Err(-5)
+11930:23:26 [igmpproxy_mgr][Error] [e8_igmp_proxy_m(341)si_igmp_pro[0]-[0]-[0]-[1]
+xy_h] si_igmp_prbr_filter_conf:[1]-[10]
+oxy_get_iptv_typ####Config existed br_port[wlan0]
+e_up_routeinfo error -1
+11930:23:26 [loopback_mgr][Error] [work_main.h(178)WORK_ASYNC_MSG_]
+ ERROR, PID [loopback_mgr] ,async event [0x9615] map fun is unknow
+11930:23:26 [e8_vlanbind_mgr][Error] [work_main.h(178)WORK_ASYNC_MSG_]
+ ERROR, PID [e8_vlanbind_mgr] ,async event [0x9615] map fun is unknow
+11930:23:26 [qos_mgr][Error] [work_main.h(178)WORK_ASYNC_MSG_]
+ ERROR, PID [qos_mgr] ,async event [0x9615] map fun is unknow
+11930:23:26 [igmpproxy_mgr][Error] [work_main.h(178)WORK_ASYNC_MSG_]
+ ERROR, PID [igmpproxy_mgr] ,async event [0x9615] map fun is unknow
+11930:23:26 [dhcps][Error] [options.c(202)GetBasicOpts] cmsCom_getDeviceInfoLocked_igd input Allen tDst.buf Allen
+11930:23:26 [dhcps][Warn] [e8_dhcps.c(301)e8DhcpsParseBas] Get Vendor Fail.
+11930:23:26 [dhcps][Warn] [e8_dhcps.c(313)e8DhcpsParseBas] Get Category Fail.
+11930:23:26 [dhcps][Warn] [e8_dhcps.c(325)e8DhcpsParseBas] Get Model Fail.
+11930:23:26 [dhcps][Warn] [e8_dhcps.c(338)e8DhcpsParseBas] Get Version Fail.
+11930:23:26 [dhcps][Warn] [e8_dhcps.c(208)e8DhcpsGetDevTy] Default Dev Type: Computer
+11930:23:27 [wlan_config][Warn] [pon_wlan_adapte(2899)rlk_wlan_setup_]
+11930:23:27 [wlan_config][Error] [wlan_config.c(1665)wlan_acl_init] Call func fail, setup_acl_list:-1
+
+ [206  main]
+The 4-BSSID mode is enabled, the BSSID byte5 MUST be the multiple of 4
+andes_pci_erasefw
+==>rlt_wlan_chip_onoff(): OnOff:0, Reset= 0, pAd->WlanFunCtrl:0x20b, Reg-WlanFunCtrl=0x20b
+==>rlt_wlan_chip_onoff(): OnOff:1, Reset= 0, pAd->WlanFunCtrl:0x208, Reg-WlanFunCtrl=0x209
+build time =
+20141115060606a
+rom patch for E3 IC
+
+platform =
+ALPS
+hw/sw version =
+▒▒
+patch version =
+
+FW Version:0.0.00 Build:1
+Build Time:201507311614____
+fw for E3 IC
+RX[0] DESC c1fc4000 size = 8192
+RX[1] DESC c1fc2000 size = 8192
+
+ creat thread : RtmpCmdQTask
+ creat thread : RtmpWscTask
+ creat thread : RtmpMlmeTaskE2pAccessMode=4
+cfg_mode=14
+cfg_mode=14
+wmode_band_equal(): Band Not Equal!
+APSDCapable[0]=0
+APSDCapable[1]=0
+APSDCapable[2]=0
+APSDCapable[3]=0
+APSDCapable[4]=0
+APSDCapable[5]=0
+APSDCapable[6]=0
+APSDCapable[7]=0
+APSDCapable[8]=0
+APSDCapable[9]=0
+APSDCapable[10]=0
+APSDCapable[11]=0
+APSDCapable[12]=0
+APSDCapable[13]=0
+APSDCapable[14]=0
+APSDCapable[15]=0
+Key1Str is Invalid key length(0) or Type(0)
+Key1Str is Invalid key length(0) or Type(0)
+Key1Str is Invalid key length(0) or Type(0)
+Key1Str is Invalid key length(0) or Type(0)
+Key2Str is Invalid key length(0) or Type(0)
+Key2Str is Invalid key length(0) or Type(0)
+Key2Str is Invalid key length(0) or Type(0)
+Key2Str is Invalid key length(0) or Type(0)
+Key3Str is Invalid key length(0) or Type(0)
+Key3Str is Invalid key length(0) or Type(0)
+Key3Str is Invalid key length(0) or Type(0)
+Key3Str is Invalid key length(0) or Type(0)
+Key4Str is Invalid key length(0) or Type(0)
+Key4Str is Invalid key length(0) or Type(0)
+Key4Str is Invalid key length(0) or Type(0)
+Key4Str is Invalid key length(0) or Type(0)
+1. Phy Mode = 49
+get_chl_grp:illegal channel (167)
+get_chl_grp:illegal channel (167)
+get_chl_grp:illegal channel (169)
+get_chl_grp:illegal channel (169)
+get_chl_grp:illegal channel (171)
+get_chl_grp:illegal channel (171)
+Country Region from e2p = ffff
+mt76x2_read_temp_info_from_eeprom:: is_temp_tx_alc=1, temp_tx_alc_enable=1
+mt76x2_get_external_lna_gain::LNA type=0x1, BLNAGain=0xffffff8c, ALNAGain0=0xffffff8c, ALNAGain1=0xffffff8c, ALNAGain2=0xffffff8c
+2. Phy Mode = 49
+3. Phy Mode = 49
+andes_pci_fw_init
+0x1300 = 00064320
+AntCfgInit: primary/secondary ant 0/1
+andes_load_cr:cr_type(2)
+ChipStructAssign(): MT76x2 hook !
+MCS Set = ff ff 00 00 01
+mt76x2_bbp_adjust():rf_bw=2, ext_ch=1, PrimCh=149, HT-CentCh=151, VHT-CentCh=155
+APStartUp(): AP Set CentralFreq at 155(Prim=149, HT-CentCh=151, VHT-CentCh=155, BBP_BW=2)
+mt76x2_calibration(channel = 155)
+The 4-BSSID mode is enabled, the BSSID byte5 MUST be the multiple of 4
+Main bssid = b0:30:55:a1:13:ff
+mt76x2_reinit_agc_gain:original agc_vga0 = 0x48, agc_vga1 = 0x48
+mt76x2_reinit_agc_gain:updated agc_vga0 = 0x48, agc_vga1 = 0x48
+mt76x2_reinit_hi_lna_gain:original hi_lna0 = 0x33, hi_lna1 = 0x33
+mt76x2_reinit_hi_lna_gain:updated hi_lna0 = 0x33, hi_lna1 = 0x33
+original vga value(chain0) = 48
+original vga value(chain1) = 48
+<==== rt28xx_init, Status=0
+RTMPDrvOpen(1):Check if PDMA is idle!
+RTMPDrvOpen(2):Check if PDMA is idle!
+11930:23:28 [wlaEntryLifeCheck Cnt = 200.
+n_config][Warn] cfg_mode=14
+[pon_wlan_adaptewmode_band_equal(): Band Equal!
+(4641)rlk_wlan_ioctl_] set wlan4 mcs_switch=0
+11930:23:28 [wlan_config][Warn] [pon_wlan_adapte(4641)rlk_wlan_ioctl_] set wlan4 assocctl=0
+11930:23:28 [wlan_config][Warn] [pon_wlan_adapte(4641)rlk_wlan_ioctl_] set wlan4 ZTECountryCode=US
+11930:23:28 [dhcps][Error] [options.c(202)GetBasicOpts] cmsCom_getDeviceInfoLocked_igd input Allen tDst.buf Allen
+11930:23:28 [dhcps][Warn] [e8_dhcps.c(301)e8DhcpsParseBas] Get Vendor Fail.
+11930:23:28 [dhcps][Warn] [e8_dhcps.c(313)e8DhcpsParseBas] Get Category Fail.
+11930:23:28 [dhcps][Warn] [e8_dhcps.c(325)e8DhcpsParseBas] Get Model Fail.
+11930:23:28 [dhcps][Warn] [e8_dhcps.c(338)e8DhcpsParseBas] Get Version Fail.
+11930:23:28 [dhcps][Warn] [e8_dhcps.c(208)e8DhcpsGetDevTy] Default Dev Type: Computer
+11930:23:28 [adev_mgr][Error] [access_dev_mgr.(2901)si_adev_update_] [si_adev_update_access_dev 2901] dwCount is 1
+11930:23:28 [wlan_config][Warn] [pon_wlan_adapte(4641)rlk_wlan_ioctl_] set wlan4 UseZTERateAlg=1
+11930:23:28 [wlan_config][Warn] [pon_wlan_adapte(4641)rlk_wlan_ioctl_] set wlan4 WmmType=0
+11930:23:28 [wlan_config][Warn] [pon_wlan_adapte(4641)rlk_wlan_ioctl_] set wlan0 BndStrgInit=1
+11930:23:28 [wlan_config][Warn] [pon_wlan_adapte(4641)rlk_wlan_ioctl_] set wlan4 BndStrgInit=1
+11930:23:28 [wlan_config][Warn] [pon_wlan_adapte(4641)rlk_wlan_ioctl_] set wlan0 BndStrgEnable=0
+11930:23:28 [wlan_config][Warn] [pon_wlan_adapte(4641)rlk_wlan_ioctl_] set wlan0 BndStrgLoadingMethod=0
+11930:23:28 [wlan_config][Warn] [pon_wlan_adapte(4641)rlk_wlan_ioctl_] set wlan0 BndStrgLoadingMethod=3
+11930:23:28 [wlan_config][Warn] [pon_wlan_adapte(4641)rlk_wlan_ioctl_] set wlan0 BndStrgCndChk=30
+11930:23:28 [wlan_config][Warn] [pon_wlan_adapte(4641)rlk_wlan_ioctl_] set wlan0 BndStrgClearEntry=1
+11930:23:28 [wlan_config][Warn] [pon_wlan_adapte(4641)rlk_wlan_ioctl_] set wlan4 BndStrgEnable=0
+11930:23:28 [wlan_config][Warn] [pon_wlan_adapte(4641)rlk_wlan_ioctl_] set wlan4 BndStrgLoadingMethod=0
+11930:23:28 [wlan_config][Warn] [pon_wlan_adapte(4641)rlk_wlan_ioctl_] set wlan4 BndStrgLoadingMethod=3
+11930:23:28 [wlan_config][Warn] [pon_wlan_adapte(4641)rlk_wlan_ioctl_] set wlan4 BndStrgCndChk=30
+11930:23:28 [wlan_config][Warn] [pon_wlan_adapte(4641)rlk_wlan_ioctl_] set wlan4 BndStrgClearEntry=1
+net_ratelimit: 2 callbacks suppressed
+11930:23:28 [adev_mgr][Error] [access_dev_mgr.(2901)si_adev_update_] [si_adev_update_access_dev 2901] dwCount is 1
+11930:23:29 [dss_mgr][Error] [dss_main.c(473)si_dss_main_dis] err subId is(6)
+Create brport: [wlan4]--[8]
+device wlan4 entered promiscuous mode
+br0: port 6(wlan4) entered forwarding state
+br0: port 6(wlan4) entered forwarding state
+
+ name=eth0,is_permit=0
+
+ name=eth1,is_permit=0
+
+ name=eth2,is_permit=0
+
+ name=eth3,is_permit=0
+
+ name=wlan0,is_permit=0
+
+ name=wlan1,is_permit=0
+
+ name=wlan2,is_permit=0
+
+ name=wlan3,is_permit=0
+
+ name=wlan4,is_permit=0
+
+ name=wlan5,is_permit=0
+
+ name=wlan6,is_permit=0
+
+ name=wlan7,is_permit=0
+================plib_DoWanDHCPS_Forbid  type:1==================
+11930:23:29 [qos_mgr][Warn] [dbl_api.c(406)zxicDbGetView] dbAPIGetView VID(17) VN(IGD.LD1.WLAN5) Err(-5)
+11930:23:29 [igmpproxy_mgr][Error] [e8_igmp_proxy_m(341)si_igmp_proxy_h] si_igmp_proxy_get_iptv_type_up_routeinfo error -1
+11930:23:29 [loopback_mgr][Error] [work_main.h(178)WORK_ASYNC_MSG_]
+ ERROR, PID [loopback_mgr] ,async event [0x9615] map fun is unknow
+11930:2[0]-[0]-[0]-[1]
+3:29 [e8_vlanbinbr_filter_conf:[1]-[10]
+d_mgr][Error] [w####Config existed br_port[wlan4]
+ork_main.h(178)WORK_ASYNC_MSG_]
+ ERROR, PID [e8_vlanbind_mgr] ,async event [0x9615] map fun is unknow
+11930:23:29 [qos_mgr][Error] [work_main.h(178)WORK_ASYNC_MSG_]
+ ERROR, PID [qos_mgr] ,async event [0x9615] map fun is unknow
+11930:23:29 [igmpproxy_mgr][Error] [work_main.h(178)WORK_ASYNC_MSG_]
+ ERROR, PID [igmpproxy_mgr] ,async event [0x9615] map fun is unknow
+11930:23:31 [adev_mgr][Error] [access_dev_mgr.(2901)si_adev_update_] [si_adev_update_access_dev 2901] dwCount is 1
+mt76x2_bbp_adjust():rf_bw=2, ext_ch=1, PrimCh=149, HT-CentCh=151, VHT-CentCh=155
+APStartUp(): AP Set CentralFreq at 155(Prim=149, HT-CentCh=151, VHT-CentCh=155, BBP_BW=2)
+mt76x2_calibration(channel = 155)
+The 4-BSSID mode is enabled, the BSSID byte5 MUST be the multiple of 4
+11930:23:41 [osgid][Error] [osgid_comm.c(1364)OSGiDProcessSen] C Server send to Java failed!!!
+11930:23:42 [OSS_httpd][Error] [oss_timer.c(677)DeleteRelTimer] DeleteRelTimer ptmcb->pno = 0x00000000  CurPID = 0x00030201
+11930:23:42 [OSS_httpd][Error] [oss_timer.c(1240)EXTRA_KILL_TIME] [tr069] call EXTRA_KILL_TIMER() delete timer error
+11930:23:42 [tr069][Warn] [dbl_api.c(406)zxicDbGetView] dbAPIGetView VID(17) VN(IGD.WD1.WCD1.WCIP1) Err(-5)
+[yqs]disable cpu queue rate limit
+11930:23:50 [SIP][Warn] [p_sip_tu.c(3409)SIP_TaskEntry] receive EV_DB_ARP_DETECT message
+11930:23:52 [tr069][Warn] [tr069_main.c(2088)si_tr069_recv_t] TIMER7 Success send EV_TR069_ALARM_EVENT !!!
+11930:23:52 [OSS_httpd][Error] [oss_timer.c(677)DeleteRelTimer] DeleteRelTimer ptmcb->pno = 0x00000000  CurPID = 0x00030201
+11930:23:52 [OSS_httpd][Error] [oss_timer.c(1240)EXTRA_KILL_TIME] [tr069] call EXTRA_KILL_TIMER() delete timer error
+11930:23:52 [tr069][Warn] [e8_pdt_tr069_in(730)E8ComRecvTr069A] Receive EV_TR069_ALARM_EVENT:alarmno=104001,status= 1.
+11930:23:52 [tr069][Warn] [e8_pdt_tr069_in(732)E8ComRecvTr069A] device reboot alarmNumber(id)=104001, status= 1.
+11930:23:52 [tr069][Error] [e8_pdt_tr069_in(2645)si_tr069_unconf] Yes,we have found the restart alarm 104001!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+11930:24:01 [osgid][Error] [osgid_comm.c(1364)OSGiDProcessSen] C Server send to Java failed!!!
+11930:24:02 [tr069][Warn] [dbl_api.c(406)zxicDbGetView] dbAPIGetView VID(17) VN(IGD.WD1.WCD1.WCIP1) Err(-5)
+[si_tp_on_hear_beat] 3 dwExecPolicy = -1,dwAppId = 6
+11930:24:12 [OSS_httpd][Error] [oss_timer.c(677)DeleteRelTimer] DeleteRelTimer ptmcb->pno = 0x00000000  CurPID = 0x00030201
+11930:24:12 [OSS_httpd][Error] [oss_timer.c(1240)EXTRA_KILL_TIME] [tr069] call EXTRA_KILL_TIMER() delete timer error
+11930:24:21 [osgid][Error] [osgid_comm.c(1364)OSGiDProcessSen] C Server send to Java failed!!!
+11930:24:22 [tr069][Warn] [dbl_api.c(406)zxicDbGetView] dbAPIGetView VID(17) VN(IGD.WD1.WCD1.WCIP1) Err(-5)
+11930:24:25 [telnetd][Warn] [td.c(2797)WritePtymDerive] Ptym(13),iWrCounts(0), errno=0
+11930:24:25 [telnetd][Warn] [td.c(2797)WritePtymDerive] Ptym(13),iWrCounts(0), errno=0
+11930:24:30 [telnetd][Warn] [td.c(3334)ForkChildProAnd] Changed auth_level
+11930:24:32 [OSS_httpd][Error] [oss_timer.c(677)DeleteRelTimer] DeleteRelTimer ptmcb->pno = 0x00000000  CurPID = 0x00030201
+11930:24:32 [OSS_httpd][Error] [oss_timer.c(1240)EXTRA_KILL_TIME] [tr069] call EXTRA_KILL_TIMER() delete timer error
+11930:24:41 [osgid][Error] [osgid_comm.c(1364)OSGiDProcessSen] C Server send to Java failed!!!
+11930:24:42 [tr069][Warn] [dbl_api.c(406)zxicDbGetView] dbAPIGetView VID(17) VN(IGD.WD1.WCD1.WCIP1) Err(-5)
+11930:24:52 [OSS_httpd][Error] [oss_timer.c(677)DeleteRelTimer] DeleteRelTimer ptmcb->pno = 0x00000000  CurPID = 0x00030201
+11930:24:52 [OSS_httpd][Error] [oss_timer.c(1240)EXTRA_KILL_TIME] [tr069] call EXTRA_KILL_TIMER() delete timer error
+11930:25:01 [osgid][Error] [osgid_comm.c(1364)OSGiDProcessSen] C Server send to Java failed!!!
+11930:25:02 [tr069][Warn] [dbl_api.c(406)zxicDbGetView] dbAPIGetView VID(17) VN(IGD.WD1.WCD1.WCIP1) Err(-5)
+11930:25:12 [OSS_httpd][Error] [oss_timer.c(677)DeleteRelTimer] DeleteRelTimer ptmcb->pno = 0x00000000  CurPID = 0x00030201
+11930:25:12 [OSS_httpd][Error] [oss_timer.c(1240)EXTRA_KILL_TIME] [tr069] call EXTRA_KILL_TIMER() delete timer error
+11930:25:16 [telnetd][Warn] [td.c(2797)WritePtymDerive] Ptym(13),iWrCounts(0), errno=0
+11930:25:21 [osgid][Error] [osgid_comm.c(1364)OSGiDProcessSen] C Server send to Java failed!!!
+11930:25:22 [tr069][Warn] [dbl_api.c(406)zxicDbGetView] dbAPIGetView VID(17) VN(IGD.WD1.WCD1.WCIP1) Err(-5)
+11930:25:32 [OSS_httpd][Error] [oss_timer.c(677)DeleteRelTimer] DeleteRelTimer ptmcb->pno = 0x00000000  CurPID = 0x00030201
+11930:25:32 [OSS_httpd][Error] [oss_timer.c(1240)EXTRA_KILL_TIME] [tr069] call EXTRA_KILL_TIMER() delete timer error
+sh (1475): drop_caches: 1
+11930:25:41 [osgid][Error] [osgid_comm.c(1364)OSGiDProcessSen] C Server send to Java failed!!!
+11930:25:42 [tr069][Warn] [dbl_api.c(406)zxicDbGetView] dbAPIGetView VID(17) VN(IGD.WD1.WCD1.WCIP1) Err(-5)
+11930:25:52 [OSS_httpd][Error] [oss_timer.c(677)DeleteRelTimer] DeleteRelTimer ptmcb->pno = 0x00000000  CurPID = 0x00030201
+11930:25:52 [OSS_httpd][Error] [oss_timer.c(1240)EXTRA_KILL_TIME] [tr069] call EXTRA_KILL_TIMER() delete timer error
+11930:26:01 [osgid][Error] [osgid_comm.c(1364)OSGiDProcessSen] C Server send to Java failed!!!
+11930:26:02 [tr069][Warn] [dbl_api.c(406)zxicDbGetView] dbAPIGetView VID(17) VN(IGD.WD1.WCD1.WCIP1) Err(-5)
