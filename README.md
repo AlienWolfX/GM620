@@ -2,13 +2,14 @@
 
 > [!WARNING]
 > **Modifying the NAND flash can brick your device. Always create a backup before proceeding.**
-> [!NOTE]
-> After switching kernels, reverting to the previous kernel involves overwriting the current running kernel with the one you want to use, so you **MUST FIRST CREATE A BACKUP**
 
 ## Changing Boot Kernel
 
+> [!NOTE]
+> After switching kernels, reverting to the previous kernel involves overwriting the current running kernel with the one you want to use, so you **MUST FIRST CREATE A BACKUP**.
+
 > [!TIP]
-> Before starting check the others partition with `cat /proc/mtd`
+> Before starting check the `others` partition with `cat /proc/mtd`.
 
 Modify `mtd7` partition by changing `BootImageNum` value:
 
@@ -32,7 +33,7 @@ nandwrite -p /dev/mtd7 /mnt/{USB_DIR}/mtd7_others.bin
 ## Flashing Kernel Partitions
 
 > [!CAUTION]
-> **Flashing kernel partitions is extremely dangerous and can brick your device permanently!**
+> **Flashing kernel partitions is extremely dangerous and can brick your device permanently!**.
 > - Always verify your backup files before flashing
 > - Ensure the device doesn't lose power during the write operation
 > - Make sure you have a working kernel in at least one partition
